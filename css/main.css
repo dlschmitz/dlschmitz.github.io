@@ -1,0 +1,46 @@
+body {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+header, footer, script {
+    margin: 1rem;
+    background-color: darkblue;
+    color: floralwhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: .5rem;
+    border-radius: 15px;
+}
+main {
+    margin: 1.5rem;
+}
+img{
+    max-width: 40%;
+    border-radius: 10px;
+    float: right;
+    margin: 10px;
+    box-shadow: 5px 5px 10px grey;
+}
+h2 {
+    color: darkblue;
+    font-family: 'Arial Narrow';
+    border-bottom: 1px solid black;
+}
+footer {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+nav ul li{
+    color: black;
+    font-family: 'Arial Narrow';
+}
+nav ul li a {
+    color: blue;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: red;
+}
