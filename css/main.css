@@ -19,6 +19,7 @@ header, footer, script {
     background-color: var(--primary-color);
     color: floralwhite;
     font-family: var(--heading-font);
+    letter-spacing: 0.1em;
     padding: .5rem;
     border-radius: 15px;
 }
@@ -35,12 +36,14 @@ img{
 h2 {
     color: darkblue;
     font-family: var(--heading-font);
+    letter-spacing: 2px;
     border-bottom: 1px solid black;
 }
 footer {
     text-align: center;
     font-size: 14px;
     font-family: var(--paragraph-font);
+    letter-spacing: 1px;
 }
 nav ul li{
     color: black;
