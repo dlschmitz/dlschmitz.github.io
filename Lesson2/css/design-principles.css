@@ -1,0 +1,90 @@
+:root {
+    --primary-color:rgb(52, 53, 36);
+    --secondary-color:rgb(107, 198, 221);
+    --font-dark-background: rgba(236, 236, 211, 0.644);
+    --heading-font: 'PT Sans Caption', sans-serif;
+    --paragraph-font: 'Libre Franklin', sans-serif;
+  }
+  .css-selector {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+  body{
+      font-size: 18px;
+      background-color: var(--secondary-color);
+  }
+  header, footer, script{
+    background-color: var(--primary-color);
+    color: var(--font-dark-background);
+    padding: 1em;
+    font-size: 18px;
+    font-family: var(--heading-font);
+    line-height: 2em;
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+.container {
+    margin: 0 auto;
+    max-width: 60em;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-item{
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    font-family: var(--paragraph-font);
+    border-left: 15px solid black;
+    border-right: 15px solid black;
+    border-bottom: 25px solid black;
+    border-top: 25px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+}
+.mini-header{
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.apple-header{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+}
+h1, h2{
+    font-family: var(--heading-font);
+}
+img{
+    padding-top: 1em;
+    max-width: 99%;
+    text-align: center;
+}
+nav ul li{
+    color: black;
+    font-family: var(--paragraph-font);
+}
+a {
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+@media only screen and (min-width: 20rem) {
+    .grid {
+        grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 37rem) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (min-width: 48rem) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    header,footer{
+        border-radius: 20px;
+    }
+}
