@@ -1,0 +1,101 @@
+:root {
+    --primary-color: rgb(133, 143, 146);
+    --secondary-color: rgb(66, 100, 73);
+    --accent-color: rgb(24, 51, 59);
+    --dark-background-font: rgb(147, 223, 247);
+    --header-font: 'Baloo Paaji 2', cursive;
+    --nav-font: 'Galdeano', sans-serif;
+    --par-font: 'Arya', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    background-image: url("../images/rainy_weather.jpg");
+    background-size: cover;
+    margin: 0 auto;
+}
+
+header,
+nav,
+footer {
+    background-color: var(--secondary-color);
+    color: var(--dark-background-font);
+    padding: 8px;
+    margin: 0 auto;
+    max-width: 850px;
+    text-align: center;
+    display: flex;
+}
+
+.h-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+nav {
+    background-color: var(--accent-color);
+    text-align: center;
+    font-family: var(--nav-font);
+    margin-top: .1em;
+}
+
+/*This should strip the ul of padding the list style*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*should create a horizontal with spacing*/
+nav li {
+    display: inline-block;
+    margin-right: 1px;
+}
+
+/*style for the menu links*/
+nav li a {
+    display: block;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: var(--accent-color);
+    text-decoration: none;
+}
+
+/*This determines the hover color for the visible links*/
+nav li:hover a {
+    background: var(--primary-color);
+}
+
+/*This will help decide the style for the dropdown links*/
+nav li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*Hover style for the dropdown links*/
+nav li:hover ul a:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/*This should keep the dropdown links hidden until hover*/
+nav li ul {
+    display: none;
+}
+
+/*Keep the dropdown links vertical*/
+nav li ul li {
+    display: block;
+    float: none;
+}
+
+/*This should display the dropdown links when hovering*/
+nav ul li a:hover+.hidden,
+.hidden:hover {
+    display: block;
+}
