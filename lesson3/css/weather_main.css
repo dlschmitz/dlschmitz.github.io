@@ -16,8 +16,8 @@ body {
 }
 
 header,
-nav,
 footer {
+    font-family: var(--header-font);
     background-color: var(--secondary-color);
     color: var(--dark-background-font);
     padding: 8px;
@@ -26,76 +26,82 @@ footer {
     text-align: center;
     display: flex;
 }
+nav {
+    margin: 0 auto;
+    max-width: 850px;
+    text-align: center;
+    display: flex;
+}
 
 .h-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-nav {
-    background-color: var(--accent-color);
-    text-align: center;
-    font-family: var(--nav-font);
-    margin-top: .1em;
-}
-
-/*This should strip the ul of padding the list style*/
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-/*should create a horizontal with spacing*/
-nav li {
-    display: inline-block;
-    margin-right: 1px;
-}
-
-/*style for the menu links*/
-nav li a {
-    display: block;
-    min-width: 200px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    background-color: var(--accent-color);
+a {
     text-decoration: none;
 }
 
-/*This determines the hover color for the visible links*/
-nav li:hover a {
-    background: var(--primary-color);
+nav {
+    margin: 0 auto;
+    font-family: var(--nav-font);
 }
 
-/*This will help decide the style for the dropdown links*/
-nav li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
+ul {
+    background: var(--accent-color);
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
-/*Hover style for the dropdown links*/
-nav li:hover ul a:hover {
-    background: var(--primary-color);
+li {
     color: white;
+    background: var(--accent-color);
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
 }
 
-/*This should keep the dropdown links hidden until hover*/
-nav li ul {
+li a {
+    display: inline-block;
+    min-width: 180px;
+    color: white;
+    text-align: center;
+}
+
+li:hover,
+li:focus-within {
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+li:focus-within a {
+    outline: none;
+}
+
+ul li ul {
+    background: var(--accent-color);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
     display: none;
 }
 
-/*Keep the dropdown links vertical*/
-nav li ul li {
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
     display: block;
-    float: none;
 }
 
-/*This should display the dropdown links when hovering*/
-nav ul li a:hover+.hidden,
-.hidden:hover {
-    display: block;
+ul li ul li {
+    clear: both;
+    width: 100%;
 }
