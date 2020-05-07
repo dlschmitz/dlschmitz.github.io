@@ -28,6 +28,7 @@ header {
 
 footer {
     font-family: var(--nav-font);
+    color: white;
     background-color: var(--secondary-color);
     margin: 0 auto;
     text-align: center;
@@ -58,10 +59,10 @@ article {
     font-size: .8em;
     margin-top: .1em;
     margin-bottom: .1em;
-}   
+}
 
 article img {
-    border:5px solid black;
+    border: 5px solid black;
     border-radius: 10px;
     max-width: 50%;
 }
@@ -145,7 +146,7 @@ ul li ul li {
     width: 100%;
 }
 
-.article-header{
+.article-header {
     font-family: var(--header-font);
 }
 
@@ -155,4 +156,22 @@ ul li ul li {
 
 .article-par {
     font-family: var(--par-font);
+}
+
+@media only screen and (min-width: 20rem) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 37rem) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
