@@ -47,21 +47,23 @@ main {
     margin: 0 auto;
     max-width: 850px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
 }
 
 article {
     background-color: rgba(199, 199, 199, 0.801);
+    text-align: center;
     padding: 1em;
     font-family: var(--par-font);
     font-size: .8em;
     margin-top: .1em;
     margin-bottom: .1em;
-    margin-right: .3em;
-}
+}   
 
-.grid-right {
-    text-align: right;
+article img {
+    border:5px solid black;
+    border-radius: 10px;
+    max-width: 50%;
 }
 
 .h-grid {
@@ -70,12 +72,9 @@ article {
     justify-items: center;
     align-items: center;
 }
+
 header img {
     max-width: 100%;
-}
-
-article img {
-    max-width: 50%;
 }
 
 a {
@@ -144,4 +143,16 @@ ul li ul:focus {
 ul li ul li {
     clear: both;
     width: 100%;
+}
+
+.article-header{
+    font-family: var(--header-font);
+}
+
+.article-nav {
+    font-family: var(--nav-font);
+}
+
+.article-par {
+    font-family: var(--par-font);
 }

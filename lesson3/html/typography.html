@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Schmitz">
+    <meta name="description"
+        content="This is the weather site for my term project. This includes a basic overview and layout of what I will be working on over the coming weeks and will evolve as the class progresses.">
+    <title>Weather on Us</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arya&family=Baloo+Paaji+2:wght@500&family=Galdeano&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/weather_child.css">
+</head>
+
+<body>
+    <header>
+        <div class="h-grid">
+            <img src="../images/WeatherLogo.png" alt="Weather on us logo">
+            <h1>Your Local Weather</h1>
+            <img src="../images/partly_cloudy.png" alt="partly cloudy image">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Town Weather</a>
+                <ul class="hidden">
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Typography</h2>
+            <div class="article-header">
+                <h3>This font is called "Baloo Paaji 2" and is the header font.</h3>
+            </div>
+            <div class="article-nav">
+                <h4>This font is called "Galdeano" and is used in the navigtation bar.</h4>
+            </div>
+            <div class="article-par">
+                <p>This font is called "Arya" and is used for the paragraphs.</p>
+            </div>
+    </article>
+    </main>
+    <footer>
+        &COPY; <span id="year"></span> | Daniel L. Schmitz | Arizona | <a href="https://www.byui.edu/online"
+            target="blank">BYUI Online Learning</a>
+        <br>
+        Current Date and Time: <span id="CurrentTime"></span>
+        <script src="../js/main.js"></script>
+    </footer>
+</body>
+
+</html>
