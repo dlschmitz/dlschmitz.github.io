@@ -42,6 +42,7 @@ nav {
     max-width: 850px;
     text-align: center;
     display: flex;
+    font-family: var(--nav-font);
 }
 
 main {
@@ -73,16 +74,12 @@ a {
     text-decoration: none;
 }
 
-nav {
-    margin: 0 auto;
-    font-family: var(--nav-font);
-}
-
-ul {
+nav ul {
     background: var(--accent-color);
     list-style: none;
     margin: 0;
     padding-left: 0;
+    justify-content: space-around;
 }
 
 li {
