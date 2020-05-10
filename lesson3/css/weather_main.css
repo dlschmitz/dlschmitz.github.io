@@ -12,6 +12,8 @@ body {
     font-size: 18px;
     background-image: url("../images/rainy_weather.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0 auto;
 }
 
