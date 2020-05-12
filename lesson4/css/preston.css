@@ -41,11 +41,12 @@ main {
     background-color: var(--main-transparent);
 }
 
-h1, h2 {
+h1,
+h2 {
     text-shadow: 1px 1px 5px gray;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
 }
@@ -55,8 +56,8 @@ article {
     padding: 1em;
     background-color: white;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-                    0 0 0 2px rgb(255, 255, 255),
-                    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -83,6 +84,7 @@ nav {
     text-align: center;
     text-decoration: none;
     color: white;
+    border-top: 2px solid var(--main-transparent);
 }
 
 .navi a:hover {
@@ -131,11 +133,16 @@ footer {
 @media only screen and (min-width: 37.5em) {
 
     nav {
-background: #18333b; /* Old browsers */
-background: -moz-linear-gradient(top,  #18333b 0%, #376651 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #18333b 0%,#376651 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #18333b 0%,#376651 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18333b', endColorstr='#376651',GradientType=0 ); /* IE6-9 */
+        background: #18333b;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #18333b 0%, #376651 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #18333b 0%, #376651 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #18333b 0%, #376651 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#18333b', endColorstr='#376651', GradientType=0);
+        /* IE6-9 */
     }
 
     header {
@@ -161,8 +168,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18333b', end
         flex: 1 1 auto;
     }
 
-    .navi a {
+    .navi a{
         text-align: center;
+        border-top: none;
+        border-right: 2px solid var(--main-transparent);
     }
 
     .navi li:first-child {
