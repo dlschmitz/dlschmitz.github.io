@@ -113,6 +113,14 @@ footer {
     line-height: 30px;
 }
 
+footer a {
+    color: rgb(182, 181, 175);
+}
+
+footer a:hover {
+    color: var(--dark-background-font);
+}
+
 @media only screen and (min-width: 32.5em) {
 
     header img {
