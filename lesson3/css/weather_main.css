@@ -3,6 +3,7 @@
     --secondary-color: rgb(66, 100, 73);
     --accent-color: rgb(24, 51, 59);
     --dark-background-font: rgb(147, 223, 247);
+    --main-transparent: rgba(199, 199, 199, 0.801);
     --header-font: 'Baloo Paaji 2', cursive;
     --nav-font: 'Galdeano', sans-serif;
     --par-font: 'Arya', sans-serif;
@@ -53,7 +54,7 @@ main {
 }
 
 article {
-    background-color: rgba(199, 199, 199, 0.801);
+    background-color: var(--main-transparent);
     padding: 1em;
     font-family: var(--par-font);
     font-size: .8em;
