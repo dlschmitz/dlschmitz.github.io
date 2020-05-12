@@ -125,7 +125,7 @@ footer {
 @media only screen and (min-width: 32em) {
 
     header img {
-        max-width: 50%;
+        max-width: 75%;
     }
 
 }
@@ -153,6 +153,10 @@ background: -webkit-linear-gradient(top,  #858f92 0%,#b9b9c9 100%); /* Chrome10-
 background: linear-gradient(to bottom,  #858f92 0%,#b9b9c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858f92', endColorstr='#b9b9c9',GradientType=0 ); /* IE6-9 */
 
+    }
+
+    header img {
+        max-width: 50%;
     }
 
     header {
