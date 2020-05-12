@@ -145,6 +145,16 @@ footer {
         /* IE6-9 */
     }
 
+    .navi a:hover {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#858f92+0,b9b9c9+100 */
+background: #858f92; /* Old browsers */
+background: -moz-linear-gradient(top,  #858f92 0%, #b9b9c9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #858f92 0%,#b9b9c9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #858f92 0%,#b9b9c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858f92', endColorstr='#b9b9c9',GradientType=0 ); /* IE6-9 */
+
+    }
+
     header {
         flex-direction: row;
         padding: 1em;
