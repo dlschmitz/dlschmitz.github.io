@@ -1,14 +1,10 @@
 /*This pulls in the current date and time for me*/
 document.getElementById("year").textContent = new Date().getFullYear();
 var d = new Date();
-var day = d. getDate();
-var month = d. getMonth();
-var year = d. getFullYear();
+var day = d.getDate();
 const WeekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", 
-"September", "October", "November", "December"];
-var dateStr = WeekDay[d.getDay()] + ", " + day + " " + monthNames[d.getMonth()] + ", " + year;
-document.getElementById("CurrentTime").innerHTML = " " + dateStr + " " + new Date(new Date().getTime()).toLocaleTimeString();
+document.getElementById("CurrentTime").innerHTML = WeekDay[d.getDay()] + ", " + (new Date().toLocaleString
+("en",{month:'long', year:'numeric', day:'numeric'})) + " " + new Date(new Date().getTime()).toLocaleTimeString();
 
 const responsebutton = document.querySelector('.response');
 const mainnav = document.querySelector('.navi')
