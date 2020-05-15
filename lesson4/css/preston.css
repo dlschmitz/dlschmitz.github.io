@@ -1,6 +1,5 @@
 * {
     margin: 0 auto;
-    max-width: 850px;
 }
 
 :root {
@@ -32,8 +31,30 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr;
     font-size: .8em;
+}
+
+.main-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading h1 {
+    margin: 10px 0 0 17px;
+}
+
+.motto {
+    font-style: italic;
+    color: var(--dark-background-font);
+    margin:0 0 10px 25px;
+}
+
+.cloudy {
+    display: none;
+}
+
+main, footer {
+    max-width: 900px;
 }
 
 main {
@@ -104,10 +125,6 @@ nav {
     display: block;
 }
 
-header img {
-    max-width: 100%;
-}
-
 footer {
     font-family: var(--nav-font);
     color: white;
@@ -123,27 +140,6 @@ footer a {
 
 footer a:hover {
     color: var(--dark-background-font);
-}
-
-@media only screen and (min-width: 32.5em) {
-
-    header img {
-        max-width: 85%;
-    }
-
-    .h-flex {
-        padding: .4em;
-        font-size: .9em;
-    }
-
-}
-
-@media only screen and (min-width: 32em) {
-
-    header img {
-        max-width: 75%;
-    }
-
 }
 
 @media only screen and (min-width: 37.5em) {
@@ -171,22 +167,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858f92', end
 
     }
 
-    header img {
-        max-width: 50%;
-    }
-
     header {
         flex-direction: row;
         padding: 1em;
         font-size: 1em;
     }
-
-    main {
-        flex-direction: row;
-    }
-
-    .h-flex {
-        flex: auto;
+    
+    .main-heading h1 {
+        margin: 0;
     }
 
     .navi {
@@ -207,4 +195,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858f92', end
     .navi li:first-child {
         display: none;
     }
+}
+
+@media only screen and (min-width: 54em) {
+    
+    .cloudy {
+        display: block;
+    }
+
 }
