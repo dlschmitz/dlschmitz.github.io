@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: rgb(133, 143, 146);
     --secondary-color: rgb(66, 100, 73);
@@ -26,7 +25,7 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-size: .8em;
 }
@@ -42,14 +41,15 @@ header {
 
 .motto {
     font-style: italic;
-    margin:0 0 10px 25px;
+    margin: 0 0 10px 25px;
 }
 
 .cloudy {
     display: none;
 }
 
-main, footer {
+main,
+footer {
     max-width: 900px;
     margin: 0 auto;
 }
@@ -169,11 +169,16 @@ footer a:hover {
 
     .navi a:hover {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#858f92+0,b9b9c9+100 */
-background: #858f92; /* Old browsers */
-background: -moz-linear-gradient(top,  #858f92 0%, #b9b9c9 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #858f92 0%,#b9b9c9 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #858f92 0%,#b9b9c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858f92', endColorstr='#b9b9c9',GradientType=0 ); /* IE6-9 */
+        background: #858f92;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #858f92 0%, #b9b9c9 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #858f92 0%, #b9b9c9 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #858f92 0%, #b9b9c9 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#858f92', endColorstr='#b9b9c9', GradientType=0);
+        /* IE6-9 */
 
     }
 
@@ -182,9 +187,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858f92', end
         padding: 1em;
         font-size: 1em;
     }
-    
+
     .main-heading h1 {
-        margin: 0;
+        margin: 0 1em 0 1em;
     }
 
     .navi {
@@ -196,7 +201,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858f92', end
         flex: 1 1 auto;
     }
 
-    .navi a{
+    .navi a {
         text-align: center;
         border-top: none;
         border-right: 2px solid var(--main-transparent);
@@ -208,7 +213,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858f92', end
 }
 
 @media only screen and (min-width: 54em) {
-    
+
     .cloudy {
         display: block;
     }
