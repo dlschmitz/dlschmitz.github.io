@@ -89,6 +89,12 @@ article {
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
+article:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(165, 161, 161),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
 nav {
     background: var(--accent-color);
     font-family: var(--nav-font);
