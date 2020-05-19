@@ -106,9 +106,13 @@ article {
     left: 10px;
 }
 
-td {
+.DailyTable {
     text-align: right;
     color: white;
+}
+
+.PrestonWeather {
+    display: none;
 }
 
 article:hover {
@@ -212,6 +216,29 @@ footer a:hover {
     h3 {
         font-size: 1.1em;
         margin: 0 0 1em 0;
+    }
+
+    .PrestonWeather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FiveDay {
+        background-color: var(--secondary-color);
+        color: white;
+        font-family: var(--nav-font);
+        text-align: center;
+        border: 1px solid black;
+        margin: 0 0 1em 0;
+    }
+
+    .FiveDayWeather {
+        padding: .5em;
+        font-family: var(--par-font);
+        text-align: center;
+        border: 1px solid black;
+        color:rgb(197, 199, 88);
     }
 
     .HeroSummary {
