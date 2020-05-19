@@ -8,12 +8,12 @@
     <meta name="author" content="Daniel Schmitz">
     <meta name="description"
         content="This is the weather site for my term project. This includes a basic overview and layout of what I will be working on over the coming weeks and will evolve as the class progresses.">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <link
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link
         href="https://fonts.googleapis.com/css2?family=Arya&family=Baloo+Paaji+2:wght@500&family=Galdeano&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/preston.css">
+    <link rel="stylesheet" href="../lesson5/css/preston.css">
 </head>
 
 <body>
@@ -40,9 +40,19 @@
     <main>
         <section>
             <h2>Preston Idaho</h2>
-            <article>
-                <h3>Hero Image/Weather Summary</h3>
-            </article>
+            <div class="HeroWeather">
+                <article>
+                    <img src="images/PrestonHeroImage.jpg" width="100%">
+                    <div class="HeroSummary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: </p><span class="forecast">Clear</span>
+                    <p>Temprature: </p><span class="forecast">66 &#8457;</span>
+                    <p>Humidity: </p><span class="forecast">32%</span>
+                    <p>Precipitation: </p><span class="forecast">3%</span>
+                    <p>Wind Speed: </p><span class="forecast">6 mph</span>
+                    </div>
+                </article>
+            </div>
             <article>
                 <h3>5 Day Forecast</h3>
             </article>
