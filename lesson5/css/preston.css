@@ -85,6 +85,7 @@ section h2 {
 }
 
 article {
+    display: flex;
     margin: .5em;
     background-color: white;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -113,6 +114,31 @@ article {
 
 .PrestonWeather {
     display: none;
+}
+
+.Story {
+    margin: 0 auto;
+}
+
+.Story img{
+    margin: 1em 2em 0 2em;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#Title {
+    font-style: normal;
+    margin: 3em 0 .2em 1em;
+    text-align: left;
+}
+
+#Author {
+    font-style: italic;
+    font-family: var(--header-font);
+    font-size: .8em;
+    color: var(--secondary-color);
+    margin-left: 2.5em;
 }
 
 article:hover {
@@ -158,6 +184,31 @@ nav {
 
 .responsive li {
     display: block;
+}
+
+#ContactUs {
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    margin: .5em;
+    width: 200px;
+    height: 150px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(165, 161, 161),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#ContactUs {
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+#Info {
+    padding: .2em;
+    color: var(--secondary-color);
 }
 
 footer {
@@ -224,13 +275,16 @@ footer a:hover {
         padding: 10px;
     }
 
-    .FiveDay {
+    table, th td {
+        border: 1px black solid;
+    }
+
+    thead tr td {
         background-color: var(--secondary-color);
         color: white;
         font-family: var(--nav-font);
         text-align: center;
         border: 1px solid black;
-        margin: 0 0 1em 0;
     }
 
     .FiveDayWeather {
@@ -247,6 +301,15 @@ footer a:hover {
         font-size: 1em;
         padding: 1em;
         line-height: 20px;
+    }
+
+    .Story {
+        margin: 0 2em 1em 2em;
+    }
+
+    .Story img{
+        float: right;
+        margin: 2em 5em 2em .5em;
     }
 
     .main-heading h1 {
@@ -271,12 +334,23 @@ footer a:hover {
     .navi li:first-child {
         display: none;
     }
+
+    #ContactUs {
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }
 
 @media only screen and (min-width: 54em) {
 
     .cloudy {
         display: block;
+    }
+
+    #ContactUs {
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
 }
