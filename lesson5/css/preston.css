@@ -71,6 +71,10 @@ h3 {
     margin: 0;
 }
 
+p {
+    padding: 0 20px 0 20px;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -289,6 +293,10 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         padding: 10px;
+    }
+
+    p {
+        padding: 0;
     }
 
     table, th td {
