@@ -17,6 +17,15 @@ body {
     background-attachment: fixed;
 }
 
+Event {
+    position: relative;
+    padding: .5em;
+    text-align: center;
+    background-color: #faf6d3;
+    font-family: var(--header-font);
+    z-index: 1;
+}
+
 header {
     font-family: var(--par-font);
     background-color: var(--secondary-color);

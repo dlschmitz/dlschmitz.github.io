@@ -9,6 +9,13 @@ document.getElementById("CurrentTime").innerHTML = WeekDay[d.getDay()] + ", " + 
 const responsebutton = document.querySelector('.response');
 const mainnav = document.querySelector('.navi')
 
+if(WeekDay[d.getDay()] == "Friday") {
+    document.getElementById("Event").style.display = 'block';
+}
+else {
+    document.getElementById("Event").style.display = 'none';
+}
+
 responsebutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 /*This changes the language in the mobile view from Open Menu to Close Menu */
 var button = document.getElementById("Switch");
