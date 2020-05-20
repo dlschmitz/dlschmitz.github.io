@@ -196,6 +196,7 @@ nav {
 }
 
 iframe {
+    display: none;
     margin: .5em;
     width: 200px;
     height: 150px;
@@ -354,6 +355,10 @@ footer a:hover {
     #ContactUs {
         flex-direction: row;
         justify-content: center;
+    }
+
+    iframe {
+        display: block;
     }
 
 }
