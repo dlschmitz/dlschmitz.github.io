@@ -306,8 +306,9 @@ footer a:hover {
         padding: .5em;
         font-family: var(--par-font);
         text-align: center;
+        background-color: #faf6d3;
         border: 1px solid black;
-        color:rgb(197, 199, 88);
+        color:rgb(49, 85, 73);
     }
 
     .HeroSummary {
