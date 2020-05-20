@@ -203,12 +203,22 @@ iframe {
 #ContactUs {
     flex-direction: column;
     align-items: center;
-    margin: 1em;
 }
 
 #Info {
     padding: .2em;
     color: var(--secondary-color);
+}
+
+#Address {
+    font-style: normal;
+    margin: 0;
+    text-align: left;
+}
+
+#SocialMedia {
+    flex-direction: row;
+    padding-top: .4em;
 }
 
 footer {
