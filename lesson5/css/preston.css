@@ -19,9 +19,9 @@ body {
 
 Event {
     position: relative;
-    padding: .5em;
+    padding: .7em;
     text-align: center;
-    background-color: #faf6d3;
+    background: radial-gradient(#f1e363, #a79922);
     font-family: var(--header-font);
     z-index: 1;
 }
