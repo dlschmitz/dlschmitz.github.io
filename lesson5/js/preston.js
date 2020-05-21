@@ -8,7 +8,7 @@ document.getElementById("CurrentTime").innerHTML = WeekDay[d.getDay()] + ", " + 
 ("en",{month:'long', year:'numeric', day:'numeric'})) + " " + new Date(new Date().getTime()).toLocaleTimeString();
 
 /* This should be the banner if statement to pull in the pancake alert on Friday */
-if(WeekDay[d.getDay()] == "Friday") {
+if(WeekDay[d.getDay()] == "Wednesday") {
     document.getElementById("Event").style.display = 'block';
 }
 else {

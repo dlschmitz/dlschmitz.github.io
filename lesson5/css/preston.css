@@ -17,31 +17,30 @@ body {
     background-attachment: fixed;
 }
 
-Event {
-    position: relative;
+.HeadDirect {
+    display: flex;
+    flex-direction: column;
+}
+
+#Event {
     padding: .7em;
     text-align: center;
     background: radial-gradient(#f1e363, #a79922);
     font-family: var(--header-font);
-    z-index: 1;
 }
 
 header {
     font-family: var(--par-font);
     background-color: var(--secondary-color);
     color: white;
-    padding: 8px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: .8em;
 }
 
 .main-heading {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .main-heading h1 {
@@ -74,7 +73,7 @@ h2 {
 }
 
 h3 {
-    font-size: .9em;
+    font-size: 1.1em;
     font-style: oblique;
     text-align: center;
     margin: 0;
@@ -287,9 +286,14 @@ footer a:hover {
 
     }
 
+.MainHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+}
+
     header {
-        flex-direction: row;
-        padding: 1em;
         font-size: 1em;
     }
 
