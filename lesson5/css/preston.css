@@ -112,7 +112,7 @@ article {
 .HeroSummary {
     position: absolute;
     top: 5px;
-    left: 5 px;
+    left: 5px;
     background: radial-gradient(var(--primary-color), var(--accent-color));
     border: 1px solid #000;
     padding: .2rem;
