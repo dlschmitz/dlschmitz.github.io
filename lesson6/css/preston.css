@@ -1,0 +1,399 @@
+:root {
+    --primary-color: rgb(133, 143, 146);
+    --secondary-color: rgb(66, 100, 73);
+    --accent-color: rgb(24, 51, 59);
+    --dark-background-font: rgb(147, 223, 247);
+    --main-transparent: rgba(199, 199, 199, 0.801);
+    --header-font: 'Baloo Paaji 2', cursive;
+    --nav-font: 'Galdeano', sans-serif;
+    --par-font: 'Arya', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    background-image: url("../images/RainyWeather.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.HeadDirect {
+    display: flex;
+    flex-direction: column;
+}
+
+#Event {
+    padding: .7em;
+    text-align: center;
+    background: radial-gradient(#f1e363, #a79922);
+    font-family: var(--header-font);
+}
+
+header {
+    font-family: var(--par-font);
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    font-size: .8em;
+}
+
+.main-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-heading h1 {
+    margin: 10px 0 0 17px;
+}
+
+.motto {
+    font-style: italic;
+    margin: 0 0 10px 25px;
+}
+
+.cloudy {
+    display: none;
+}
+
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main {
+    font-family: var(--par-font);
+    background-color: var(--main-transparent);
+}
+
+h1,
+h2 {
+    text-shadow: 1px 1px 5px gray;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-style: oblique;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    padding: 0 20px 0 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.HeroWeather {
+    position: relative;
+}
+
+.HeroWeather img {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    margin: .5em;
+    background-color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.HeroSummary {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: radial-gradient(var(--primary-color), var(--accent-color));
+    border: 1px solid #000;
+    padding: .2rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+    line-height: 15px;
+    font-size: .8em;
+    left: 10px;
+}
+
+.DailyTable {
+    text-align: right;
+    color: white;
+}
+
+.PrestonWeather {
+    display: none;
+}
+
+.Story {
+    margin: 0 auto;
+}
+
+.Story img {
+    margin: 1em 2em 0 2em;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#Title {
+    font-style: normal;
+    margin: 3em 0 .2em 1em;
+    text-align: left;
+}
+
+#Author {
+    font-style: italic;
+    font-family: var(--header-font);
+    font-size: .8em;
+    color: var(--secondary-color);
+    margin-left: 2.5em;
+}
+
+article:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(165, 161, 161),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    background: var(--accent-color);
+    font-family: var(--nav-font);
+    margin: 0 auto;
+}
+
+
+.navi {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navi li:first-child {
+    display: block;
+}
+
+.navi li {
+    display: none;
+}
+
+.navi a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid var(--main-transparent);
+}
+
+.navi a:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.responsive li {
+    display: block;
+}
+
+#ContactUs {
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    display: none;
+    margin: .5em;
+    width: 200px;
+    height: 150px;
+    border: none;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(165, 161, 161),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+#ContactUs {
+    flex-direction: column;
+    align-items: center;
+}
+
+#Info {
+    padding: .2em;
+    color: var(--secondary-color);
+}
+
+#Address {
+    font-style: normal;
+    margin: 0;
+    text-align: left;
+}
+
+#SocialMedia {
+    flex-direction: row;
+    padding-top: .4em;
+}
+
+footer {
+    font-family: var(--nav-font);
+    color: white;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 1em;
+    line-height: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--dark-background-font);
+}
+
+@media only screen and (min-width: 37.5em) {
+
+    nav {
+        background: #18333b;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #18333b 0%, #376651 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #18333b 0%, #376651 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #18333b 0%, #376651 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#18333b', endColorstr='#376651', GradientType=0);
+        /* IE6-9 */
+    }
+
+    .navi a:hover {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#858f92+0,b9b9c9+100 */
+        background: #858f92;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #858f92 0%, #b9b9c9 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #858f92 0%, #b9b9c9 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #858f92 0%, #b9b9c9 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#858f92', endColorstr='#b9b9c9', GradientType=0);
+        /* IE6-9 */
+
+    }
+
+.MainHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+}
+
+    header {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        margin: 0 0 1em 0;
+    }
+
+    .PrestonWeather {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    table,
+    th td {
+        border: 1px black solid;
+    }
+
+    thead tr td {
+        background-color: var(--secondary-color);
+        color: white;
+        font-family: var(--nav-font);
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .FiveDayWeather {
+        padding: .5em;
+        font-family: var(--par-font);
+        text-align: center;
+        background-color: #faf6d3;
+        border: 1px solid black;
+        color: rgb(49, 85, 73);
+    }
+
+    .HeroSummary {
+        top: 50px;
+        left: 50px;
+        font-size: 1em;
+        padding: 1em;
+        line-height: 20px;
+    }
+
+    .Story {
+        margin: 0 2em 1em 2em;
+    }
+
+    .Story img {
+        float: right;
+        margin: 2em 5em 2em .5em;
+    }
+
+    .main-heading h1 {
+        margin: 0 1em 0 1em;
+    }
+
+    .navi {
+        display: flex;
+    }
+
+    .navi li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navi a {
+        text-align: center;
+        border-top: none;
+        border-right: 2px solid var(--main-transparent);
+    }
+
+    .navi li:first-child {
+        display: none;
+    }
+
+    #ContactUs {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    iframe {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 54em) {
+
+    .cloudy {
+        display: block;
+    }
+
+    #ContactUs {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
