@@ -92,6 +92,7 @@ section h2 {
     text-align: center;
 }
 
+
 .HeroWeather {
     position: relative;
 }
@@ -110,6 +111,8 @@ article {
 }
 
 .HeroSummary {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -123,10 +126,23 @@ article {
     left: 10px;
 }
 
-.DailyTable {
-    text-align: right;
-    color: white;
+.SumData {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.LeftData {
+    flex-direction: column;
+    color: white;
+    text-align: right;
+}
+
+.RightData {
+    flex-direction: column;
+    color: rgb(197, 199, 88);
+}
+
 
 .PrestonWeather {
     display: none;
@@ -286,12 +302,12 @@ footer a:hover {
 
     }
 
-.MainHead {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1em;
-}
+    .MainHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em;
+    }
 
     header {
         font-size: 1em;
