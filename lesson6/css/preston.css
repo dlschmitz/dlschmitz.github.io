@@ -84,6 +84,7 @@ p {
 }
 
 section {
+    margin: .7em 0;
     display: flex;
     flex-direction: column;
 }
@@ -123,7 +124,6 @@ article {
     opacity: .8;
     line-height: 15px;
     font-size: .8em;
-    left: 10px;
 }
 
 .SumData {
