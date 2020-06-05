@@ -71,7 +71,7 @@ section h2 {
     text-align: center;
 }
 
-article {
+.gal-pics {
     margin: .5em;
     background-color: white;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -80,16 +80,16 @@ article {
     max-width: 300px;
 }
 
-article img[data-src] {
+.gal-pics img[data-src] {
     filter: blur(0.2em);
 }
 
-article img {
+.gal-pics img {
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
-figcaption {
+p {
     color: var(--secondary-color);
     font-family: var(--par-font);
     text-align: center;
@@ -230,7 +230,7 @@ footer a:hover {
 
 @media only screen and (min-width: 54em) {
 
-    article:hover {
+    .gal-pics:hover {
         box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
             0 0 0 2px rgb(165, 161, 161),
             0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
