@@ -82,23 +82,18 @@ article {
 
 article img[data-src] {
     filter: blur(0.2em);
-  }
-  
-  article img {
+}
+
+article img {
     filter: blur(0em);
     transition: filter 0.5s;
-  }
+}
 
-  figcaption {
-      color: var(--secondary-color);
-      font-family: var(--par-font);
-      text-align: center;
-  }
-
-  section article picture #img-align {
-      justify-self: center;
-      align-self: center;
-  }
+figcaption {
+    color: var(--secondary-color);
+    font-family: var(--par-font);
+    text-align: center;
+}
 
 nav {
     background: var(--accent-color);
@@ -248,9 +243,9 @@ footer a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    
-section #title {
-    grid-column: span 3;
-}
+
+    section #title {
+        grid-column: span 3;
+    }
 
 }
