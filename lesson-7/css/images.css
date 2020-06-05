@@ -181,7 +181,7 @@ footer a:hover {
 
     }
 
-    .MainHead {
+    .mainHead {
         display: flex;
         flex-direction: row;
         justify-content: center;
