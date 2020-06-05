@@ -46,7 +46,7 @@ header {
 
 main,
 footer {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -63,7 +63,8 @@ h2 {
 section {
     margin: .7em 0;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    justify-content: center;
 }
 
 section h2 {
@@ -76,6 +77,7 @@ article {
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
         0 0 0 2px rgb(255, 255, 255),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    max-width: 300px;
 }
 
 article img[data-src] {
@@ -85,6 +87,17 @@ article img[data-src] {
   article img {
     filter: blur(0em);
     transition: filter 0.5s;
+  }
+
+  figcaption {
+      color: var(--secondary-color);
+      font-family: var(--par-font);
+      text-align: center;
+  }
+
+  section article picture #img-align {
+      justify-self: center;
+      align-self: center;
   }
 
 nav {
@@ -184,9 +197,8 @@ footer a:hover {
         font-size: 1em;
     }
 
-    h3 {
-        font-size: 1.1em;
-        margin: 0 0 1em 0;
+    section #title {
+        grid-column: span 2;
     }
 
     .main-heading h1 {
@@ -215,7 +227,8 @@ footer a:hover {
     section {
         margin: .7em 0;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
     }
 
 }
@@ -226,6 +239,7 @@ footer a:hover {
         box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
             0 0 0 2px rgb(165, 161, 161),
             0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        margin: .3em;
     }
 
     section {
