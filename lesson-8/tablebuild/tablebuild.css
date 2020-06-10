@@ -1,16 +1,8 @@
-:root {
-    --super-light-green: (#e7f0ed);
-    --less-light-green: (#e7ffed);
-    --medium-blue-grey: (#628ca6);
-    --light-blue-grey: (#7fb9c2);
-    --main-font: 'Ubuntu';
-    --second-font: 'sans-serif';
-}
-
 body {
     margin: 3em auto;
     display: flex;
     justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 table {
@@ -21,24 +13,21 @@ table {
 }
 
 thead {
-    font-family: 'Ubuntu';
     background: #7fb9c2;
     color: black;
-    font-size: 1.5em;
-    padding: 10px;
+    font-size: 1.7em;
 }
 
 td {
-    padding: 10px;
-    border: 1px solid gray;
+    border: 1px solid rgb(163, 162, 162);
     border-collapse: collapse;
+    padding: 10px;
 }
 
-.odds tr :nth-child(2n + 1) {
-    background: #e7ffed;
-}
-
-tr {
+tbody tr {
     background: #e7f0ed;
-    padding: .8em;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
 }
