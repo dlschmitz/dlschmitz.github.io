@@ -14,15 +14,15 @@
 
 <body>
     <header>
-        <div class="headDirect"></div>
-        <div class="mainHead">
-            <img src="images/WeatherLogo.png" alt="Weather on us logo">
-            <div class="main-heading">
-                <h1>All things Southern Idaho</h1>
-                <div class="motto">You will find it all here</div>
+        <div class="headDirect">
+            <div class="mainHead">
+                <img src="images/WeatherLogo.png" alt="Weather on us logo">
+                <div class="main-heading">
+                    <h1>All things Southern Idaho</h1>
+                    <div class="motto">You will find it all here</div>
+                </div>
+                <img class="cloudy" src="images/PartlyCloudy.png" alt="Partly Cloudy icon found in the link as well">
             </div>
-            <img class="cloudy" src="images/PartlyCloudy.png" alt="Partly Cloudy icon found in the link as well">
-        </div>
         </div>
     </header>
     <nav>
@@ -39,26 +39,26 @@
     </nav>
     <main>
         <section>
+            <h2>Tell us about the weather near you!</h2>
             <article>
-                <h2>Tell us about the weather near you!</h2>
                 <form method="GET" action="thanks.html" autocomplete="on">
                     <div class="form-layout">
                         <div class="input-field">
-                            <label for="name">Full Name:</label>
+                            <label>Full Name:</label>
                             <input type="text" id="name" name="name" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
                             <span class="validity"></span>
                         </div>
                     </div>
                     <div class="form-layout">
                         <div class="input-field">
-                            <label for="email">Email:</label>
+                            <label>Email:</label>
                             <input type="email" id="email" placeholder="test@WeatherOnUs.com" required>
                             <span class="validity"></span>
                         </div>
                     </div>
                     <div class="form-layout">
                         <div class="input-field">
-                            <label for="tel"> Phone:</label>
+                            <label> Phone:</label>
                             <input type="tel" name="phone" placeholder="999-999-9999" required
                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="14">
                             <span class="validity"></span>
@@ -66,20 +66,20 @@
                     </div>
                     <div class="form-layout">
                         <div class="input-field">
-                            <label for="number"> Zip Code:</label>
-                            <input type="number" name="zip" required pattern="[0-9]{5}" maxlength="5">
+                            <label> Zip Code:</label>
+                            <input type="number" name="zip" required>
                             <span class="validity"></span>
                         </div>
                     </div>
                     <div class="form-layout">
                         <div class="input-field">
-                            <label for="text"> Date:</label>
+                            <label> Date:</label>
                             <input type="date" name="Storm-Date">
                         </div>
                     </div>
                     <div class="form-layout">
                         <div class="input-field">
-                            <label for="storms"> Storm Type:</label>
+                            <label> Storm Type:</label>
                             <input list="storms" name="Storm-Type">
                             <datalist id="storms">
                                 <option value="Flash Flood"></option>
@@ -92,14 +92,14 @@
                     </div>
                     <div class="form-layout">
                         <div class="input-field">
-                            <label for="rating">Storm Severity:</label>
-                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                            <label>Storm Severity:</label>
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1"
                                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <div id="ratingvalue">5</div>
                         </div>
                     </div>
                     <div class="input-field">
-                        <label for="region"> Storm Region:</label>
+                        <label> Storm Region:</label>
                         <select name="regions" id="region-select">
                             <option value="">Select Region...</option>
                             <option value="Preston">Preston</option>
@@ -108,25 +108,25 @@
                         </select>
                     </div>
                     <div class="input-field">
-                        <label for="danger">User In-Danger<br> Level:</label>
+                        <label>User In-Danger<br> Level:</label>
                         <div class="radio">
                             <div class="radio-path">
                                 <input type="radio" id="Yes" name="danger" value="Yes">
-                                <label for="Yes">Yes</label>
+                                <label>Yes</label>
                             </div>
                             <div class="radio-path">
                                 <input type="radio" id="No" name="danger" value="No" checked>
-                                <label for="No">No</label>
+                                <label>No</label>
                             </div>
                             <div class="radio-path">
                                 <input type="radio" id="Maybe" name="danger" value="Maybe">
-                                <label for="No">Maybe</label>
+                                <label>Maybe</label>
                             </div>
                         </div>
                     </div>
                     <div class="input-field">
-                        <label for="comments">Comments:</label>
-                        <textarea rows="4" cols="35" name="comment" form="usrform"
+                        <label>Comments:</label>
+                        <textarea rows="4" cols="35" name="comment"
                             placeholder="Enter text here..."></textarea>
                     </div>
                     <div class="input-field">
