@@ -95,10 +95,55 @@ article {
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-p {
-    color: var(--secondary-color);
-    font-family: var(--par-font);
-    text-align: center;
+input:invalid+span:after {
+    position: absolute;
+    content: '✖';
+    padding-left: 5px;
+    color: #8b0000;
+}
+
+input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+    color: #009000;
+}
+
+form {
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+.form-layout {
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    font: var(--nav-font);
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field span {
+    display: none;
+}
+
+.input-field textarea {
+    margin-top: .3em;
+}
+
+.input-field:nth-child(9) {
+    margin: 1rem 0;
+}
+
+#ratingvalue {
+    margin: 0 5px;
+}
+
+.radio-path:nth-child(1) {
+    padding-top: .3rem;
 }
 
 nav {
@@ -106,7 +151,6 @@ nav {
     font-family: var(--nav-font);
     margin: 0 auto;
 }
-
 
 .navi {
     list-style: none;
@@ -235,6 +279,45 @@ footer a:hover {
 
     .main-heading h1 {
         margin: 0 1em 0 1em;
+    }
+
+    .input-field {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-field label {
+        flex-basis: 8rem;
+        padding: .2em;
+    }
+
+    .radio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radio label {
+        flex-basis: .1rem;
+    }
+
+    .radio-path {
+        flex-direction: column;
+    }
+
+    .input-field span {
+        display: block;
+    }
+
+    button {
+        margin: 1rem;
+    }
+
+    button:nth-child(1) {
+        margin-left: 8rem;
+    }
+
+    button:hover {
+        color: var(--accent-color);
     }
 
     .navi {

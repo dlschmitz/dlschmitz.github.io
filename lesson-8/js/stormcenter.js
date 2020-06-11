@@ -27,3 +27,8 @@ button.addEventListener('click',
             button.innerHTML = button.getAttribute("data-text-swap");
         }
     }, false);
+
+/* Adjusts the rating scale */
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
