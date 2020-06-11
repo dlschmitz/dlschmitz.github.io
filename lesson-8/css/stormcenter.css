@@ -88,6 +88,7 @@ section h2 {
 
 article {
     display: flex;
+    flex-direction: column;
     margin: .5em;
     background-color: white;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -144,6 +145,15 @@ form {
 
 .radio-path:nth-child(1) {
     padding-top: .3rem;
+}
+
+button {
+    margin: .5rem;
+    background-color: var(--dark-background-font);
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: .5em;
 }
 
 nav {
@@ -309,15 +319,16 @@ footer a:hover {
     }
 
     button {
-        margin: 1rem;
-    }
-
-    button:nth-child(1) {
-        margin-left: 8rem;
+        margin: 1em 0 0 8rem;
     }
 
     button:hover {
-        color: var(--accent-color);
+        background-color: var(--accent-color);
+        color: white;
+    }
+
+    p {
+        text-align: center;
     }
 
     .navi {
