@@ -178,6 +178,13 @@ iframe {
     color: var(--secondary-color);
 }
 
+.wireframes {
+    font-size: 1em;
+    text-align: left;
+    padding: .2em;
+    color: var(--secondary-color);
+}
+
 #info h3 {
     font-size: 1em;
     padding: 1em 0 0 0;
