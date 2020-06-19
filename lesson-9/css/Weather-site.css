@@ -47,8 +47,30 @@ header {
     margin: 10px 0 0 17px;
 }
 
-img {
+.town-info article {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article div {
     align-self: center;
+}
+
+article div h2 {
+    line-height: .1em;
+    font-weight: 400;
+}
+
+article div h3 {
+    font-size: .8em;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+}
+
+.town-info img {
+    align-self: center;
+    padding: 1em;
+    max-width: 90%;
 }
 
 .motto {
@@ -62,7 +84,6 @@ img {
 
 main,
 footer {
-    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -151,8 +172,15 @@ iframe {
 }
 
 #info {
+    font-size: 1em;
+    text-align: left;
     padding: .2em;
     color: var(--secondary-color);
+}
+
+#info h3 {
+    font-size: 1em;
+    padding: 1em 0 0 0;
 }
 
 #address {
@@ -164,6 +192,7 @@ iframe {
 #socialMedia {
     flex-direction: row;
     padding-top: .4em;
+    padding-left: 0;
 }
 
 footer {
@@ -181,6 +210,10 @@ footer a {
 
 footer a:hover {
     color: var(--dark-background-font);
+}
+
+#info a:hover {
+    color: var(--primary-color);
 }
 
 @media only screen and (min-width: 37.5em) {
@@ -257,7 +290,34 @@ footer a:hover {
 
     #contactUs {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .town-info article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .town-info article:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    article div {
+        align-self: center;
+        padding: 20px;
+    }
+
+    article div h2 {
+        text-align: left;
+    }
+
+    .town-info img {
+        max-width: 100%;
+    }
+
+    main,
+    footer {
+        max-width: 800px;
     }
 
 }
@@ -268,9 +328,32 @@ footer a:hover {
         display: block;
     }
 
-    #contactUs {
+    .town-info {
+        display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+    }
+
+    .town-info article {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .town-info article:nth-child(2) {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    article div, article div h2 {
+        text-align: center;
+    }
+
+    .town-info img {
+        max-width: 95%;
+    }
+
+    main,
+    footer {
+        max-width: 1150px;
     }
 
 }
