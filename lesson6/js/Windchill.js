@@ -1,5 +1,5 @@
-let t = document.getElementById('Temp').textContent;
-let s = document.getElementById('Speed').textContent;
+let t = document.getElementById('current-temp').textContent;
+let s = document.getElementById('speed').textContent;
 
 if (t <= 50 && s >= 3) {
     let p = Math.pow(s, 0.16);

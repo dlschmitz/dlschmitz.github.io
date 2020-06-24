@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather on Us | Preston, Idaho</title>
+    <meta name="author" content="Daniel Schmitz">
+    <meta name="description"
+        content="This is the weather site for my term project. This includes a basic overview and layout of what I will be working on over the coming weeks and will evolve as the class progresses.">
+    <link rel="shortcut icon" href="../lesson6/images/favicon.ico">
+    <link rel="stylesheet" href="../lesson1/css/normalize.css">
+    <link rel="stylesheet" href="../lesson6/css/preston.css">
+</head>
+
+<body>
+    <header>
+        <div class="HeadDirect">
+            <div id="Event">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city pavillion.</div>
+            <div class="MainHead">
+                <img src="../lesson6/images/WeatherLogo.png" alt="Weather on us logo">
+                <div class="main-heading">
+                    <h1>All things Southern Idaho</h1>
+                    <div class="motto">You will find it all here</div>
+                </div>
+                <img class="cloudy" src="../lesson6/images/PartlyCloudy.png"
+                    alt="Partly Cloudy icon found in the link as well">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navi">
+            <li><a class="response" href="#" id="Switch" data-text-swap="&#9776; Close Menu"
+                    style="border-top: none;">&#9776; Open Menu</a></li>
+            <li><a href="../lesson-9/index.html">Home</a></li>
+            <li><a href="#" style="color: rgb(147, 223, 247);">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson-7/gallery-7.html" style="border-right: none;">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Preston Idaho</h2>
+            <article class="HeroWeather">
+                <picture class="Wk6Hero">
+                    <source media="(max-width: 430px)" srcset="../lesson-10/images/PrestonHeroImage500.jpg">
+                    <source media="(max-width: 775px)" srcset="../lesson-10/images/PrestonHeroImage800.jpg">
+                    <img src="../lesson-10/images/PrestonHeroImage900.jpg" alt="New Week 10 Hero Image">
+                </picture>
+                <div class="HeroSummary">
+                    <h3>Weather Summary</h3>
+                    <div class="SumData">
+                        <div class="LeftData">
+                            <span>Currently:&#8287;</span><br>
+                            <span>Temperature:&#8287;</span><br>
+                            <span>Wind Chill: &#8287;</span><br>
+                            <span>Humidity:&#8287;</span><br>
+                            <span>Wind Speed:&#8287;</span>
+                        </div>
+                        <div class="RightData">
+                            <span id="current"></span><br>
+                            <span id="current-temp"></span>&#8457;<br>
+                            <span id="WindChill"></span><br>
+                            <span id="humidity"></span>%<br>
+                            <span id="speed"></span> mph
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="PrestonWeather">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td id="tomorrow">
+                            </td>
+                            <td id="day2">
+                            </td>
+                            <td id="day3">
+                            </td>
+                            <td id="day4">
+                            </td>
+                            <td id="day5">
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tr>
+                        <tr class="newData"></tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <div class="Story">
+                    <img src="../lesson6/images/SoloGrad.jpg" alt="Graduate celebrating in empty stadium">
+                    <h3 id="Title">Grads Still Celebrate Amidst Coronavirus</h3>
+                    <div id="Author">By Katelyn Page</div>
+                    <p> &emsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odit veniam laudantium
+                        incidunt
+                        at doloremque similique explicabo non ad maxime, voluptate nobis nulla rerum enim iure id ipsa
+                        quod ducimus!</p>
+                    <p> &emsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi, sit doloribus
+                        iste ut
+                        laudantium pariatur adipisci recusandae blanditiis. Deleniti doloribus iusto sit explicabo
+                        nulla! Aliquid et vel esse repellendus!</p>
+                    <p> &emsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ullam laudantium nemo
+                        sed
+                        quaerat est excepturi amet quas quam nulla voluptatum, quisquam dolores accusamus adipisci saepe
+                        incidunt. Facilis, culpa dolores.
+                        <br><a href="#" target="Blank" style="font-size: .8em;">Continue to read the full story...</a>
+                    </p>
+                </div>
+            </article>
+            <article id="ContactUs">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d313068.70527094067!2d-111.78790633664951!3d42.07317587024763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1589946932335!5m2!1sen!2sus"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div id="Info">
+                    <h3 id="Address">Weather On Us</h3>
+                    <img src="../lesson6/images/MapIcon.png" alt="Google Map Pin Icon"><span> 30 N 1st E</span>
+                    <br>Preston, ID 83263
+                    <br>
+                    <br>&phone; 999.999.9999
+                    <br>&#9993; info@weatheronus.com
+                    <div id="SocialMedia">
+                        <a href="https://www.facebook.com" target="Blank"><img src="../lesson6/images/Facebook.png"
+                                alt="Link to Facebook"></a>
+                        <a href="https://www.twitter.com" target="Blank"><img src="../lesson6/images/Twitter.png"
+                                alt="Link to Twitter"></a>
+                        <a href="https://www.instagram.com" target="Blank"><img src="../lesson6/images/Instagram.png"
+                                alt="Link to instagram"></a>
+                        <a href="https://www.linkedin.com" target="Blank"><img src="../lesson6/images/LinkedIn.png"
+                                alt="Link to LinkedIn"></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &COPY; <span id="year"></span> | Daniel L. Schmitz | Arizona | <a href="https://www.byui.edu/online"
+            target="blank">BYUI Online Learning</a>
+        <br>
+        Current Date and Time: <span id="CurrentTime"></span>
+        <script src="../lesson6/js/preston.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../lesson6/js/font.js"></script>
+    <script src="../lesson6/js/Windchill.js"></script>
+    <script src="js/api-json.js"></script>
+</body>
+
+</html>
