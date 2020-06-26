@@ -5,9 +5,9 @@ fetch(apiURL)
     .then((jsObject) => {
         //console.log(jsObject);
         document.getElementById('current').textContent = jsObject.current.weather[0].description;
-        document.getElementById('current-temp').textContent = jsObject.current.temp;
+        document.getElementById('current-temp').textContent = jsObject.current.temp.toFixed(0);
         document.getElementById('humidity').textContent = jsObject.current.humidity;
-        document.getElementById('speed').textContent = jsObject.current.wind_speed;
+        document.getElementById('speed').textContent = jsObject.current.wind_speed.toFixed(0);
 
         const newDay = jsObject['daily'];
         const forecast = newDay.slice(1, 6);
@@ -20,7 +20,7 @@ fetch(apiURL)
             image.setAttribute('src', `https://openweathermap.org/img/w/${eachDay.weather[0].icon}.png`);
             image.setAttribute('alt', `${eachDay.weather[0].description}`);
 
-            para1.innerHTML = `${eachDay.temp.day}&#8457;`;
+            para1.innerHTML = `${eachDay.temp.day.toFixed(0)}&#8457;`;
             data.appendChild(para1);
             data.appendChild(image);
 
