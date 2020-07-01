@@ -272,6 +272,29 @@ footer a:hover {
     color: var(--dark-background-font);
 }
 
+.new-town-info {
+    display: flex;
+    justify-content: center;
+}
+
+.new-town-info article{
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 60px;
+    border: 10px solid var(--primary-color);
+}
+
+.new-town-info article ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.new-town-info article h3 {
+    border-bottom: 2px solid rgb(182, 127, 26);
+    padding-bottom: 8px;
+}
+
 @media only screen and (min-width: 37.5em) {
 
     nav {

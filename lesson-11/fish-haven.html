@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather on Us | Preston, Idaho</title>
+    <title>Weather on Us | Fish Haven, Idaho</title>
     <meta name="author" content="Daniel Schmitz">
     <meta name="description"
-        content="This is the weather site for my term project. This includes a basic overview and layout of what I will be working on over the coming weeks and will evolve as the class progresses.">
+        content="This is the glorious town of Fish Haven. Come visit and enjoy the weather and wonderful events that are taking place here.">
     <link rel="shortcut icon" href="../lesson6/images/favicon.ico">
     <link rel="stylesheet" href="../lesson-9/css/normalize.css">
     <link rel="stylesheet" href="../lesson6/css/preston.css">
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="HeadDirect">
-            <div id="Event">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city pavillion.</div>
+            <div id="Event">Saturday = Fish Haven Pancakes in the Park! 10:00 a.m. Saturday at the city pavillion.</div>
             <div class="MainHead">
                 <img src="../lesson6/images/WeatherLogo.png" alt="Weather on us logo">
                 <div class="main-heading">
@@ -33,21 +33,21 @@
             <li><a class="response" href="#" id="Switch" data-text-swap="&#9776; Close Menu"
                     style="border-top: none;">&#9776; Open Menu</a></li>
             <li><a href="../lesson-9/index.html">Home</a></li>
-            <li><a href="#" style="color: rgb(147, 223, 247);">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson-10/lesson-10.html">Preston</a></li>
+            <li><a href="/lesson-11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="/lesson-11/fish-haven.html" style="color: rgb(147, 223, 247);">Fish Haven</a></li>
             <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
             <li><a href="../lesson-7/gallery-7.html" style="border-right: none;">Gallery</a></li>
         </ul>
     </nav>
     <main>
         <section>
-            <h2>Preston Idaho</h2>
+            <h2>Fish Haven Idaho</h2>
             <article class="HeroWeather">
                 <picture class="Wk6Hero">
-                    <source media="(max-width: 430px)" srcset="../lesson-10/images/idaho-biker-sunset500.jpg">
-                    <source media="(max-width: 775px)" srcset="../lesson-10/images/idaho-biker-sunset800.jpg">
-                    <img src="../lesson-10/images/idaho-biker-sunset900.jpg" alt="New Week 6 Hero Image">
+                    <source media="(max-width: 430px)" srcset="../lesson-11/images/fish-haven500.jpg">
+                    <source media="(max-width: 775px)" srcset="../lesson-11/images/fish-haven800.jpg">
+                    <img src="../lesson-11/images/fish-haven900.jpg" alt="New Week 6 Hero Image">
                 </picture>
                 <div class="HeroSummary">
                     <h3>Weather Summary</h3>
@@ -95,11 +95,11 @@
             <article>
                 <div class="Story">
                     <picture class="Wk6Hero">
-                        <source media="(max-width: 775px)" srcset="../lesson6/images/SoloGrad-small.jpg">
-                        <img src="../lesson6/images/SoloGrad.jpg" alt="Graduate celebrating in empty stadium">
+                        <source media="(max-width: 775px)" srcset="../lesson-11/images/CDC-Coronavirus-banner-small.jpg">
+                        <img src="../lesson-11/images/CDC-Coronavirus-banner.jpg" alt="CDC Coronavirus banner">
                     </picture>
-                    <h3 id="Title">Grads Still Celebrate Amidst Coronavirus</h3>
-                    <div id="Author">By Katelyn Page</div>
+                    <h3 id="Title">Coronavirus Update Central</h3>
+                    <div id="Author">By Noah Jacob</div>
                     <p> &emsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odit veniam laudantium
                         incidunt
                         at doloremque similique explicabo non ad maxime, voluptate nobis nulla rerum enim iure id ipsa
@@ -117,13 +117,14 @@
                 </div>
             </article>
             <article id="ContactUs">
+
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d313068.70527094067!2d-111.78790633664951!3d42.07317587024763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1589946932335!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8503.432215570732!2d-111.39571829833488!3d42.036426813445786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1593625883880!5m2!1sen!2sus"
                     allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <div id="Info">
                     <h3 id="Address">Weather On Us</h3>
                     <img src="../lesson6/images/MapIcon.png" alt="Google Map Pin Icon"><span> 30 N 1st E</span>
-                    <br>Preston, ID 83263
+                    <br>Fish Haven, ID 83263
                     <br>
                     <br>&phone; 999.999.9999
                     <br>&#9993; info@weatheronus.com
@@ -151,8 +152,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="../lesson6/js/font.js"></script>
     <script src="../lesson6/js/Windchill.js"></script>
-    <script src="js/api-json.js"></script>
-    <script src="js/preston-json.js"></script>
+    <script src="js/fish-haven.js"></script>
+    <script src="js/fh-json.js"></script>
 </body>
 
 </html>
