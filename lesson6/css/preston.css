@@ -17,11 +17,6 @@ body {
     background-attachment: fixed;
 }
 
-.HeadDirect {
-    display: flex;
-    flex-direction: column;
-}
-
 #Event {
     padding: .7em;
     text-align: center;
@@ -140,7 +135,7 @@ article {
 
 .RightData {
     flex-direction: column;
-    color: rgb(197, 199, 88);
+    color: rgb(252, 243, 121);
 }
 
 
