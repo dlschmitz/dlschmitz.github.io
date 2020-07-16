@@ -1,0 +1,257 @@
+body {
+    font-size: 18px;
+    background-image: url("/final-project/images/cozumel-background-largeV2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-top: 20px;
+        max-width: 100px;
+    }
+
+    h1 {
+        color: $darkbackground;
+        margin: 20px;
+        text-align: center;
+        font-family: $headerFont;
+    }
+}
+
+// end header
+
+nav {
+    background: $barcolor;
+    font-family: $headerFont;
+    margin: 0px auto;
+}
+
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .page {
+        background-color: $backup;
+        color: black;
+        font-weight: 600;
+    }
+
+    li:first-child {
+        display: block;
+    }
+
+    li {
+        display: none;
+    }
+
+    li:last-child a {
+        border-bottom: none;
+    }
+
+    a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-bottom: 2px solid white;
+    }
+
+    a:hover {
+        background-color: $backup;
+    }
+
+}
+
+// end navigation
+
+.responsive li {
+    display: block;
+}
+
+main {
+    background-color: $backup;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.focus {
+    margin: 10px auto;
+
+    h1 {
+        font-family: $headerFont;
+        text-align: center;
+        color: black;
+    }
+
+    p {
+        font-family: $paraFont;
+        text-align: left;
+        color: white;
+        padding: 0 20px;
+    }
+
+}
+
+// end focus
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    picture img {
+        max-width: 95%;
+        margin: 10px auto;
+        box-shadow: $shadow;
+
+    }
+
+    // end myslides
+
+    .left-button {
+        position: absolute;
+        top: 115px;
+        left: 15px;
+        border: 2px solid;
+        border-radius: 15px;
+        padding: 25px 10px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.50);
+    }
+
+    .right-button {
+        position: absolute;
+        top: 115px;
+        right: 15px;
+        border: 2px solid;
+        border-radius: 15px;
+        padding: 25px 10px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.50);
+    }
+}
+
+// end slides class
+.daily {
+    background-color: $mission;
+    align-self: center;
+    max-width: 300px;
+    padding: 20px 10px;
+    margin: 10px;
+    box-shadow: $shadow;
+
+    h3 {
+        flex-direction: column;
+        font-family: $weatherFont;
+        text-align: center;
+        margin: 0;
+    }
+
+    .data {
+        display: flex;
+
+        .leftData {
+            flex-direction: column;
+            color: white;
+            text-align: right;
+            font-family: $paraFont;
+        }
+
+        .rightData {
+            flex-direction: column;
+            color: rgb(252, 243, 121);
+            font-family: $paraFont;
+        }
+
+    }
+
+    // end of data class
+
+}
+
+// end of daily class
+
+
+.futureweather {
+    display: none;
+}
+
+.reservation {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    button {
+        color: white;
+        border: none;
+        background-color: $image;
+        max-width: 400px;
+        box-shadow: $shadow;
+        padding: 10px 30px;
+        margin: 10px;
+    }
+
+}
+
+// end reservation class
+
+footer {
+    background-color: $barcolor;
+    color: white;
+
+    h3 {
+        font-family: $headerFont;
+    }
+
+    iframe {
+        display: none;
+        margin: .5em;
+        width: 200px;
+        height: 150px;
+        border: none;
+        box-shadow: $shadow;
+    }
+
+    .contactUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        padding: .2em;
+    }
+
+    .address {
+        font-style: normal;
+        margin: 0;
+        text-align: left;
+    }
+
+    .socialMedia {
+        flex-direction: row;
+        padding-top: .4em;
+    }
+
+    .author {
+        text-align: center;
+        font-size: .7em;
+        padding: 10px;
+    }
+}
+
+// end of footer

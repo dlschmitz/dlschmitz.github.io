@@ -1,0 +1,48 @@
+
+.navigation {
+    display: flex;
+
+li {
+    display: block;
+    flex: 1 1 auto;
+}
+
+li:last-child a{
+    border-right: none;
+}
+
+a {
+    text-align: center;
+    border-bottom: none;
+    border-right: 2px solid;
+}
+
+li:first-child {
+    display: none;
+}
+
+} // end navigation class
+
+.futureweather {
+    display: block;
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+} // end of forecast
+
+.day {
+    display: flex;
+    text-align: center;
+
+li {
+    flex: 1 1 20%;
+}
+
+img {
+    max-width: 5rem;
+}
+
+} // end of day class

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Scoots | Home</title>
+    <meta name="author" content="Daniel Schmitz">
+    <meta name="description"
+        content="Welcome to your Cozumel adventure central. If you are looking for excitement and adventure off the beaten path, then you are here. Stay and find the best ride for your adventure!">
+    <link rel="shortcut icon" type="image/x-icon" href="/final-project/images/scoots.ico">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="/final-project/images/Scoot-Logo-2.png" alt="Scoots ATV Helmet with logo">
+        <h1>Your adventure starts here!</h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="response" href="#" id="switch" data-text-swap="&#9776; Close Menu">&#9776; Open Menu</a></li>
+            <li><a class="page" href="index.html">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Rentals</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="focus">
+            <h1>Cozumel, Mexico</h1>
+            <p>&emsp;Scoots offers side by side ATV, Honda Motor Scooters, and Jeep rentals, perfect for one-of-a-kind
+                off
+                road adventure in Cozumel.
+                We specialize in self-guided tours to make your off road adventure unforgetable!
+                So if you're ready to get off the beaten path, Scoots is here to make your Cozumel vacation a
+                once-in-a-lifetime experience!</p>
+            <p>&emsp;Whether you need a fun and convenient way to tour the shops and galleries, want to spend the day
+                relaxing
+                on the secluded beaches, or seek a Cozumel multi day experience, we've got you covered! Scoots has a way
+                to get you there!
+            </p>
+            <p>&emsp;And for the adventure seekers and nature enthusiasts looking to gain a new perspective of
+                Cozumel....our
+                side by side vehicle is the ultimate combination of luxury and off-roading!
+            </p>
+            <p>
+                &emsp;So whether you are living here, vacationing here, or just passing through, Scoots is ready to take
+                your
+                all terrain vehicle rental experience to the next level!
+            </p>
+        </div>
+        <div class="slides">
+            <picture>
+                <source media="(max-width: 430px)" srcset="images/jeep-slideshow-small.jpg">
+                <source media="(max-width: 775px)" srcset="images/jeep-slideshow-medium.jpg">
+                <img class="mySlides" src="images/jeep-slideshow-large.jpg" alt="jeeps parked over rocky terrain">
+            </picture>
+            <picture>
+                <source media="(max-width: 430px)" srcset="images/atv-slideshow-small.jpg">
+                <source media="(max-width: 775px)" srcset="images/atv-slideshow-medium.jpg">
+                <img class="mySlides" src="images/atv-slideshow-large.jpg" alt="ATVs parked in the sandy terrain">
+            </picture>
+            <picture>
+                <source media="(max-width: 430px)" srcset="images/beach-slideshow-small.jpg">
+                <source media="(max-width: 775px)" srcset="images/beach-slideshow-medium.jpg">
+                <img class="mySlides" src="images/beach-slideshow-large.jpg" alt="beach scenic view">
+            </picture>
+            <picture>
+                <source media="(max-width: 430px)" srcset="images/jeepSand-slideshow-small.jpg">
+                <source media="(max-width: 775px)" srcset="images/jeepSand-slideshow-medium.jpg">
+                <img class="mySlides" src="images/jeepSand-slideshow-large.jpg"
+                    alt="jeep off the beach with camera equipment">
+            </picture>
+            <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <div class="daily">
+            <h3>Today's Weather</h3>
+            <div class="data">
+                <div class="leftData">
+                    <span>Currently:&#8287;</span><br>
+                    <span>Temperature:&#8287;</span><br>
+                    <span>Humidity:&#8287;</span><br>
+                    <span>Wind Speed:&#8287;</span>
+                </div>
+                <div class="rightData">
+                    <span id="current"></span><br>
+                    <span id="current-temp"></span><br>
+                    <span id="humidity"></span><br>
+                    <span id="speed"></span>
+                </div>
+            </div>
+        </div>
+        <div class="futureweather">
+            <h2>5 Day Forecast</h2>
+            <div class="day">
+                <div class="col">
+                    <span id="day1"> </span><br>
+                    <img src="#" alt="#" id="fiveDay1"><br>
+                    <span id="temp1"> </span>
+                </div>
+                <div class="col">
+                    <span id="day2"> </span><br>
+                    <img src="#" alt="#" id="fiveDay2"><br>
+                    <span id="temp2"> &#8457;</span>
+                </div>
+                <div class="col">
+                    <span id="day3"> </span><br>
+                    <img src="#" alt="#" id="fiveDay3"><br>
+                    <span id="temp3"> &#8457;</span>
+                </div>
+                <div class="col">
+                    <span id="day4"> </span><br>
+                    <img src="#" alt="#" id="fiveDay4"><br>
+                    <span id="temp4"> &#8457;</span>
+                </div>
+                <div class="col">
+                    <span id="day5"> </span><br>
+                    <img src="#" alt="#" id="fiveDay5"><br>
+                    <span id="temp5"> &#8457;</span>
+                </div>
+            </div>
+        </div>
+        <div class="sumRentals">
+            
+        </div>
+        <div class="reservation">
+            <button onclick="window.location.href='#';">Secure Your Reservation Now!</button>
+        </div>
+    </main>
+    <Footer>
+        <div class="contactUs">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160777.3505672148!2d-87.06343855161091!3d20.510858015511037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1594701538266!5m2!1sen!2sus"
+                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="info">
+                <h3 class="address">Scoots</h3>
+                <span> Costera Sur, 77600</span>
+                <br> Cozumel, QROO, Mexico
+                <br>
+                <br>&phone; 999.999.9999
+                <br>&#9993; info@scoots.com
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com" target="Blank"><img src="/final-project/images/Facebook.png"
+                            alt="Link to Facebook"></a>
+                    <a href="https://www.twitter.com" target="Blank"><img src="/final-project/images/Twitter.png"
+                            alt="Link to Twitter"></a>
+                    <a href="https://www.instagram.com" target="Blank"><img src="/final-project/images/Instagram.png"
+                            alt="Link to instagram"></a>
+                    <a href="https://www.linkedin.com" target="Blank"><img src="/final-project/images/LinkedIn.png"
+                            alt="Link to LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            &COPY; <span id="year"></span> | Daniel L. Schmitz | Arizona | <a href="https://www.byui.edu/online"
+                target="blank">BYUI Online Learning</a>
+            <br>
+            Last Modified Date: <span id="lastModified"></span>
+        </div>
+        <script src="js/scoots.js"></script>
+    </Footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/font.js"></script>
+    <script src="js/forecast.js"></script>
+</body>
+
+</html>
