@@ -22,12 +22,12 @@ fetch(forecastApiURL)
 
         const fivedayforecast = jsObject.list.filter(f => f.dt_txt.includes('18:00:00'));
 
-        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thru', 'Fri', 'Sat'];
+        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
 
         let day = 0;
         fivedayforecast.forEach(forecast => {
             let d = new Date(forecast.dt_txt);
-            document.getElementById(`temp${day+1}`).textContent = forecast.main.temp.toFixed(0);
+            document.getElementById(`temp${day+1}`).innerHTML = forecast.main.temp.toFixed(0) + '&#8457;';
             document.getElementById(`day${day+1}`).textContent = weekdays[d.getDay()];
 
             let imagesrc = 'https://openweathermap.org/img/wn/' + forecast.weather[0].icon + '@2x.png';

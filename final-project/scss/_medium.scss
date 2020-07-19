@@ -14,7 +14,7 @@ li:last-child a{
 a {
     text-align: center;
     border-bottom: none;
-    border-right: 2px solid;
+    border-right: 2px solid white;
 }
 
 li:first-child {
@@ -22,6 +22,25 @@ li:first-child {
 }
 
 } // end navigation class
+.wrap { 
+
+.daily {
+    align-self: stretch;
+}
+
+.data {
+
+    .leftData {
+        padding-top: 30px;
+    }
+
+    .rightData {
+        padding-top: 30px;
+    }
+
+} //end of data class
+
+} //end of wrap class
 
 .futureweather {
     display: block;
@@ -31,7 +50,7 @@ ul {
     padding: 0;
 }
 
-} // end of forecast
+} // end of futureweather
 
 .day {
     display: flex;
@@ -46,3 +65,43 @@ img {
 }
 
 } // end of day class
+
+.slides {
+
+    .left-button {
+        top: 145px;
+        left: 115px;
+    }
+
+    .right-button {
+        top: 145px;
+        right: 115px;
+    }
+}
+
+// end slides class
+
+.futureweather {
+    display: flex;
+    background-color: $barcolor;
+    font-family: $weatherFont;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    box-shadow: $shadow;
+    margin: 10px;
+
+    .col {
+        padding: 10px;
+        border: 2px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .col:nth-child(1) {
+        border-left: 1px solid white;
+    }
+
+    .col:nth-child(5) {
+        border-right: 1px solid white;
+    }
+}

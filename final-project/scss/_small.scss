@@ -146,44 +146,53 @@ main {
 }
 
 // end slides class
-.daily {
-    background-color: $mission;
-    align-self: center;
-    max-width: 300px;
-    padding: 20px 10px;
-    margin: 10px;
-    box-shadow: $shadow;
 
-    h3 {
-        flex-direction: column;
-        font-family: $weatherFont;
-        text-align: center;
-        margin: 0;
-    }
+.wrap {
+    display: flex;
+    justify-content: center;
 
-    .data {
-        display: flex;
+    .daily {
+        background-color: $mission;
+        align-self: center;
+        max-width: 300px;
+        padding: 20px 10px;
+        margin: 10px;
+        box-shadow: $shadow;
 
-        .leftData {
+        h3 {
             flex-direction: column;
-            color: white;
-            text-align: right;
-            font-family: $paraFont;
+            font-family: $weatherFont;
+            text-align: center;
+            margin: 0;
         }
 
-        .rightData {
-            flex-direction: column;
-            color: rgb(252, 243, 121);
-            font-family: $paraFont;
+        .data {
+            display: flex;
+
+            .leftData {
+                flex-direction: column;
+                color: white;
+                text-align: right;
+                font-family: $paraFont;
+            }
+
+            .rightData {
+                flex-direction: column;
+                color: rgb(252, 243, 121);
+                font-family: $paraFont;
+            }
+
         }
+
+        // end of data class
 
     }
 
-    // end of data class
+    // end of daily class
 
 }
 
-// end of daily class
+//end of wrap class
 
 
 .futureweather {

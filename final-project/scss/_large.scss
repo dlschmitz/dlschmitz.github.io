@@ -17,3 +17,36 @@ header {
  .focus {
      max-width: 1000px;
  }
+
+ .slides {
+
+    .left-button {
+        top: 175px;
+        left: 215px;
+    }
+
+    .right-button {
+        top: 175px;
+        right: 215px;
+    }
+}
+
+// end slides class
+
+ .reservation {
+     font-size: 30px;
+     margin-bottom: 10px;
+
+    button {
+        max-width: 600px;
+        box-shadow: $shadow;
+    }
+
+}
+
+// end reservation class
+
+footer {
+    max-width: 1050px;
+    margin: 0 auto;
+}

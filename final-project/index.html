@@ -22,10 +22,10 @@
         <ul class="navigation">
             <li><a class="response" href="#" id="switch" data-text-swap="&#9776; Close Menu">&#9776; Open Menu</a></li>
             <li><a class="page" href="index.html">Home</a></li>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">Rentals</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/final-project/html/tour.html">Tours</a></li>
+            <li><a href="/final-project/html/rental.html">Rentals</a></li>
+            <li><a href="/final-project/html/reservation.html">Reservations</a></li>
+            <li><a href="/final-project/html/contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
@@ -77,58 +77,57 @@
             <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
             <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
         </div>
-        <div class="daily">
-            <h3>Today's Weather</h3>
-            <div class="data">
-                <div class="leftData">
-                    <span>Currently:&#8287;</span><br>
-                    <span>Temperature:&#8287;</span><br>
-                    <span>Humidity:&#8287;</span><br>
-                    <span>Wind Speed:&#8287;</span>
-                </div>
-                <div class="rightData">
-                    <span id="current"></span><br>
-                    <span id="current-temp"></span><br>
-                    <span id="humidity"></span><br>
-                    <span id="speed"></span>
-                </div>
-            </div>
-        </div>
-        <div class="futureweather">
-            <h2>5 Day Forecast</h2>
-            <div class="day">
-                <div class="col">
-                    <span id="day1"> </span><br>
-                    <img src="#" alt="#" id="fiveDay1"><br>
-                    <span id="temp1"> </span>
-                </div>
-                <div class="col">
-                    <span id="day2"> </span><br>
-                    <img src="#" alt="#" id="fiveDay2"><br>
-                    <span id="temp2"> &#8457;</span>
-                </div>
-                <div class="col">
-                    <span id="day3"> </span><br>
-                    <img src="#" alt="#" id="fiveDay3"><br>
-                    <span id="temp3"> &#8457;</span>
-                </div>
-                <div class="col">
-                    <span id="day4"> </span><br>
-                    <img src="#" alt="#" id="fiveDay4"><br>
-                    <span id="temp4"> &#8457;</span>
-                </div>
-                <div class="col">
-                    <span id="day5"> </span><br>
-                    <img src="#" alt="#" id="fiveDay5"><br>
-                    <span id="temp5"> &#8457;</span>
+        <div class="wrap">
+            <div class="daily">
+                <h3>Today's Weather</h3>
+                <div class="data">
+                    <div class="leftData">
+                        <span>Currently:&#8287;</span><br>
+                        <span>Temperature:&#8287;</span><br>
+                        <span>Humidity:&#8287;</span><br>
+                        <span>Wind Speed:&#8287;</span>
+                    </div>
+                    <div class="rightData">
+                        <span id="current"></span><br>
+                        <span id="current-temp"></span><br>
+                        <span id="humidity"></span><br>
+                        <span id="speed"></span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="sumRentals">
-            
+            <div class="futureweather">
+                <h2>5 Day Forecast</h2>
+                <div class="day">
+                    <div class="col">
+                        <span id="day1"> </span><br>
+                        <img src="#" alt="#" id="fiveDay1"><br>
+                        <span id="temp1"></span>
+                    </div>
+                    <div class="col">
+                        <span id="day2"> </span><br>
+                        <img src="#" alt="#" id="fiveDay2"><br>
+                        <span id="temp2"></span>
+                    </div>
+                    <div class="col">
+                        <span id="day3"> </span><br>
+                        <img src="#" alt="#" id="fiveDay3"><br>
+                        <span id="temp3"></span>
+                    </div>
+                    <div class="col">
+                        <span id="day4"> </span><br>
+                        <img src="#" alt="#" id="fiveDay4"><br>
+                        <span id="temp4"></span>
+                    </div>
+                    <div class="col">
+                        <span id="day5"> </span><br>
+                        <img src="#" alt="#" id="fiveDay5"><br>
+                        <span id="temp5"></span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="reservation">
-            <button onclick="window.location.href='#';">Secure Your Reservation Now!</button>
+            <button onclick="window.location.href='https://dlschmitz.github.io/final-project/html/reservation.html';">Secure Your Reservation Now!</button>
         </div>
     </main>
     <Footer>
@@ -159,7 +158,7 @@
             &COPY; <span id="year"></span> | Daniel L. Schmitz | Arizona | <a href="https://www.byui.edu/online"
                 target="blank">BYUI Online Learning</a>
             <br>
-            Last Modified Date: <span id="lastModified"></span>
+            Last Modified: <span id="lastModified"></span>
         </div>
         <script src="js/scoots.js"></script>
     </Footer>
