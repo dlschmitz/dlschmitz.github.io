@@ -50,3 +50,18 @@ footer {
     max-width: 1050px;
     margin: 0 auto;
 }
+
+form {
+    padding: 15px 40px;
+
+    label.personal, label.rental-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    fieldset {
+        width: 500px;
+    }
+}

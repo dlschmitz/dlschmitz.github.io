@@ -563,6 +563,68 @@ footer {
     font-size: .7em;
     padding: 10px; }
 
+form {
+  background-color: white;
+  padding: 5px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column; }
+  form fieldset {
+    margin: 2rem 10px;
+    border: 1px solid #47B3A6;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+    font-size: 1.25rem; }
+  form legend {
+    color: #47B3A6;
+    margin: 0 4rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    font-family: "Assistant", sans-serif; }
+  form label.personal, form label.rental-info {
+    display: block;
+    padding: 1rem;
+    font-family: "Assistant", sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem; }
+  form label.personal input, form label.rental-info input, form .text-area {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.09); }
+  form input.submit-button {
+    border: none;
+    background-color: #CF8643;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    font-size: 1.25rem; }
+  form .text-area {
+    min-width: 300px;
+    min-height: 200px;
+    margin-top: 10px;
+    padding: 10px; }
+
+.required {
+  color: red; }
+
+.agreement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  font-family: "Asul", sans-serif; }
+  .agreement input {
+    padding: 10px;
+    margin: 0 10px;
+    height: 20px; }
+
 @media only screen and (min-width: 560px) {
   .navigation {
     display: flex; }
@@ -622,7 +684,10 @@ footer {
     .futureweather .col:nth-child(1) {
       border-left: 1px solid white; }
     .futureweather .col:nth-child(5) {
-      border-right: 1px solid white; } }
+      border-right: 1px solid white; }
+
+  form {
+    padding: 10px 20px; } }
 /* end of media query */
 @media only screen and (min-width: 1024px) {
   header {
@@ -655,5 +720,15 @@ footer {
 
   footer {
     max-width: 1050px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  form {
+    padding: 15px 40px; }
+    form label.personal, form label.rental-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%; }
+    form fieldset {
+      width: 500px; } }
 /* end of media query */

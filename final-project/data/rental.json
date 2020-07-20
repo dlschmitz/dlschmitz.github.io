@@ -4,54 +4,54 @@
             "occupants": 1,
             "reservation_half": "$20",
             "reservation_full": "$30",
-            "walk-in_half": "$25",
-            "walk-in_full": "$35",
-            "image": "Honda-Metro"
+            "walkin_half": "$25",
+            "walkin_full": "$35",
+            "image": "HondaMetro.png"
         },
         {
             "name": "Honda Dio Scooter",
             "occupants": 2,
             "reservation_half": "$30",
             "reservation_full": "$40",
-            "walk-in_half": "$35",
-            "walk-in_full": "$45",
-            "image": "Honda-Dio"
+            "walkin_half": "$35",
+            "walkin_full": "$45",
+            "image": "HondaDio.png"
         },
         {
             "name": "Honda PCX150 Scooter",
             "occupants": 2,
             "reservation_half": "$40",
             "reservation_full": "$50",
-            "walk-in_half": "$45",
-            "walk-in_full": "$55",
-            "image": "Honda-PCX150"
+            "walkin_half": "$45",
+            "walkin_full": "$55",
+            "image": "HondaPCX150.png"
         },
         {
             "name": "Honda Pioneer ATV",
             "occupants": 4,
             "reservation_half": "$50",
             "reservation_full": "$70",
-            "walk-in_half": "$60",
-            "walk-in_full": "$80",
-            "image": "Honda-Pioneer"
+            "walkin_half": "$60",
+            "walkin_full": "$80",
+            "image": "HondaPioneer.png"
         },
         {
             "name": "Jeep Wrangler - 4 door with a/c",
             "occupants": 5,
             "reservation_half": "$70",
             "reservation_full": "$100",
-            "walk-in_half": "$85",
-            "walk-in_full": "$125",
-            "image": "Jeep-4-Door"
+            "walkin_half": "$85",
+            "walkin_full": "$125",
+            "image": "Jeep4Door.png"
         },
         {
             "name": "Jeep Wrangler - 2 door",
             "occupants": 4,
             "reservation_half": "$60",
             "reservation_full": "$85",
-            "walk-in_half": "$70",
-            "walk-in_full": "$90",
-            "image": "Jeep-2-Door"
+            "walkin_half": "$70",
+            "walkin_full": "$90",
+            "image": "Jeep2Door.png"
         }
     ]
 }

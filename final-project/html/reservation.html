@@ -29,6 +29,47 @@
         </ul>
     </nav>
     <main>
+        <div class="focus">
+            <form method="get" action="/final-project/html/thanks.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class='personal'>Full Name<span class="required">* </span><input type='text' name='fname'
+                            pattern='[a-zA-Z ]{5,}' required placeholder="John Doe"></label>
+                    <label class='personal' class="required">Email<span class="required">*</span><input type='email'
+                            name='email' placeholder='emailaddress@email.com' required></label>
+                    <label class='personal'>Phone<span class="required">*</span><input type='tel' name='phone' required
+                            pattern="[0-9]{10}" maxlength="14" placeholder='9991114444'></label>
+                    <label class='personal'>State<span></span><input type='text' name='state' minlength="2"></label>
+                    <label class='personal'>Country<span></span><input type='text' name='Country'></label>
+                    <br><span class="required">*</span><span>Denotes required fields</span>
+                </fieldset>
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label class='rental-info'>Pickup Date<input type='date' name='rental-date'></label>
+                    <label class='rental-info'>Return Date<input type='date' name='rental-date'></label>
+                    <label class='rental-info' for='rental-list'>Rental Type<input name='rental-type' list='rental-data'
+                            id="rental-list"></label>
+                    <datalist id='rental-data'>
+                        <option value="Honda Metro Scooter"></option>
+                        <option value="Honda Dio Scooter"></option>
+                        <option value="Honda PCX150 Scooter"></option>
+                        <option value="Honda Pioneer ATV"></option>
+                        <option value="Jeep Wrangler - 4 door with a/c"></option>
+                        <option value="Jeep Wrangler - 2 door"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class='personal'>Cruise Line<span></span><input type='text' name='Cruise'></label>
+                    <label class='rental-info'>Comments<br>
+                        <textarea class='text-area'
+                            placeholder="Please let us know about any special accommodations/comments such as the need and location of a drop-off request."></textarea></label>
+                </fieldset>
+                <label class='agreement'><input input type="checkbox" id="agreement"
+                        value="Rental Agreement"><a href="/final-project/data/RENTAL AGREEMENT.pdf" target="blank">Rental Agreement</a></label>
+                <input class='submit-button' type='submit' value='Make my reservation'>
+            </form>
+        </div>
     </main>
     <Footer>
         <div class="contactUs">
