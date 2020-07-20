@@ -471,6 +471,13 @@ main {
     max-width: 95%;
     margin: 10px auto;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
+  .slides h3 {
+    position: absolute;
+    top: 20px;
+    left: 13px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid gray;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
   .slides .left-button {
     position: absolute;
     top: 115px;
@@ -713,6 +720,9 @@ form {
     .day img {
       max-width: 5rem; }
 
+  .slides h3 {
+    top: 10px;
+    left: 180px; }
   .slides .left-button {
     top: 145px;
     left: 115px; }
@@ -770,6 +780,9 @@ form {
   .focus {
     max-width: 1000px; }
 
+  .slides h3 {
+    top: 10px;
+    left: 310px; }
   .slides .left-button {
     top: 175px;
     left: 215px; }
