@@ -41,7 +41,7 @@ fetch(rentalAPI)
             li5.innerHTML = `Walk-in for full day:${data.walkin_full}`;
             ul.appendChild(li5);
 
-            image.setAttribute('src', `/final-project/image/${data.image}`);
+            image.setAttribute('src', `/final-project/images/${data.image}`);
             image.setAttribute('alt', `${data.name}`);
             product.appendChild(image);
 
