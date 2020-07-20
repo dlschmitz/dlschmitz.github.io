@@ -88,6 +88,7 @@ main {
 
 .focus {
     margin: 10px auto;
+    max-width: 95%;
 
     h1 {
         font-family: $headerFont;
@@ -331,7 +332,6 @@ form {
     }
 
     .text-area {
-        min-width: 300px;
         min-height: 200px;
         margin-top: 10px;
         padding: 10px;

@@ -450,7 +450,8 @@ main {
   margin: 0 auto; }
 
 .focus {
-  margin: 10px auto; }
+  margin: 10px auto;
+  max-width: 95%; }
   .focus h1 {
     font-family: "Assistant", sans-serif;
     text-align: center;
@@ -616,7 +617,6 @@ form {
     width: 96%;
     font-size: 1.25rem; }
   form .text-area {
-    min-width: 300px;
     min-height: 200px;
     margin-top: 10px;
     padding: 10px; }
