@@ -20,30 +20,35 @@ fetch(rentalAPI)
             let li4 = document.createElement('li');
             let li5 = document.createElement('li');
             let image = document.createElement('img');
+            let button = document.createElement('button');
 
+            product.appendChild(h2);
             product.appendChild(ul);
 
             h2.innerHTML = `${data.name}`;
-            product.appendChild(h2);
 
             li1.innerHTML = `Max riders:${data.occupants}`;
             ul.appendChild(li1);
 
-            li2.innerHTML = `Reservation for half day:${data.reservation_half}`;
+            li2.innerHTML = `Reservation for half day: $${data.reservation_half}`;
             ul.appendChild(li2);
 
-            li3.innerHTML = `Reservation for full day:${data.reservation_full}`;
+            li3.innerHTML = `Reservation for full day: $${data.reservation_full}`;
             ul.appendChild(li3);
 
-            li4.innerHTML = `Walk-in for half day:${data.walkin_half}`;
+            li4.innerHTML = `Walk-in for half day: $${data.walkin_half}`;
             ul.appendChild(li4);
 
-            li5.innerHTML = `Walk-in for full day:${data.walkin_full}`;
+            li5.innerHTML = `Walk-in for full day: $${data.walkin_full}`;
             ul.appendChild(li5);
 
-            image.setAttribute('src', `/final-project/images/${data.image}`);
+            image.setAttribute('src', `/final-project/images/${data.image}.jpg`);
             image.setAttribute('alt', `${data.name}`);
             product.appendChild(image);
+
+            button.setAttribute('onclick', `window.location.href='https://dlschmitz.github.io/final-project/html/reservation.html';`);
+            button.innerHTML = `Reserve`;
+            product.appendChild(button);
 
             document.querySelector('div.rental').appendChild(product);
         });

@@ -18,15 +18,6 @@
             "image": "HondaDio"
         },
         {
-            "name": "Honda PCX150 Scooter",
-            "occupants": 2,
-            "reservation_half": 40,
-            "reservation_full": 50,
-            "walkin_half": 45,
-            "walkin_full": 55,
-            "image": "HondaPCX150"
-        },
-        {
             "name": "Honda Pioneer ATV",
             "occupants": 4,
             "reservation_half": 50,
@@ -52,6 +43,15 @@
             "walkin_half": 70,
             "walkin_full": 90,
             "image": "Jeep2Door"
+        },
+        {
+            "name": "Honda PCX150 Scooter",
+            "occupants": 2,
+            "reservation_half": 40,
+            "reservation_full": 50,
+            "walkin_half": 45,
+            "walkin_full": 55,
+            "image": "HondaPCX150"
         }
     ]
 }

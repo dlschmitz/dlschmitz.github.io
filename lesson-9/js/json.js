@@ -20,7 +20,7 @@ fetch(requestURL)
             let para3 = document.createElement('p');
             let image = document.createElement('img');
 
-            eachTown.appendChild(townData)
+            eachTown.appendChild(townData);
 
             h2.innerHTML = `${town.name}`;
             townData.appendChild(h2);

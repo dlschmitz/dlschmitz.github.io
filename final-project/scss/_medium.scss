@@ -109,3 +109,31 @@ img {
 form {
     padding: 10px 20px;
 }
+
+.rental {
+    max-width: 750px;
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        h2 {
+            grid-column-start: 1;
+            grid-column-end: span 3;
+            margin: 0;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        button {
+            justify-self: center;
+        }
+    }
+
+    // end of div
+
+}
+
+// end of rental class
