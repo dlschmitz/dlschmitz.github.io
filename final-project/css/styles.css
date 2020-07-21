@@ -391,7 +391,7 @@ template {
 
 body {
   font-size: 18px;
-  background-image: url("/final-project/images/cozumel-background-largeV2.jpg");
+  background-image: url("/final-project/images/background.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -421,7 +421,7 @@ nav {
   padding: 0;
   margin: 0; }
   .navigation .page {
-    background-color: rgba(160, 216, 207, 0.603);
+    background-color: rgba(160, 216, 207, 0.74);
     color: black;
     font-weight: 600; }
   .navigation li:first-child {
@@ -438,13 +438,13 @@ nav {
     color: white;
     border-bottom: 2px solid white; }
   .navigation a:hover {
-    background-color: rgba(160, 216, 207, 0.603); }
+    background-color: rgba(160, 216, 207, 0.74); }
 
 .responsive li {
   display: block; }
 
 main {
-  background-color: rgba(160, 216, 207, 0.603);
+  background-color: rgba(160, 216, 207, 0.74);
   display: flex;
   flex-direction: column;
   margin: 0 auto; }
