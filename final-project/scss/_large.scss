@@ -4,25 +4,25 @@ header {
     img {
         margin: 20px;
     }
- }
+}
 
- nav {
-     max-width: 1050px;
- }
+nav {
+    max-width: 1050px;
+}
 
- main {
-     max-width: 1050px;
- }
+main {
+    max-width: 1050px;
+}
 
- .focus {
-     max-width: 1000px;
- }
+.focus {
+    max-width: 1000px;
+}
 
- .slides {
+.slides {
 
     h3 {
         top: 10px;
-        left:310px;
+        left: 310px;
     }
 
     .left-button {
@@ -38,9 +38,9 @@ header {
 
 // end slides class
 
- .reservation {
-     font-size: 30px;
-     margin-bottom: 10px;
+.reservation {
+    font-size: 30px;
+    margin-bottom: 10px;
 
     button {
         max-width: 600px;
@@ -59,7 +59,8 @@ footer {
 form {
     padding: 15px 40px;
 
-    label.personal, label.rental-info {
+    label.personal,
+    label.rental-info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -70,3 +71,14 @@ form {
         width: 500px;
     }
 }
+
+// end of form
+
+.tours {
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+//end of tours

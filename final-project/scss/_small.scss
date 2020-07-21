@@ -90,7 +90,8 @@ main {
     margin: 10px auto;
     max-width: 95%;
 
-    h1 {
+    h1,
+    h2 {
         font-family: $headerFont;
         text-align: center;
         color: black;
@@ -124,7 +125,7 @@ main {
     h3 {
         position: absolute;
         top: 20px;
-        left:13px;
+        left: 13px;
         background-color: rgba(255, 255, 255, 0.50);
         border: 1px solid gray;
         box-shadow: $shadow;
@@ -440,3 +441,56 @@ form {
 }
 
 // end of rental class
+
+// tours page
+
+.tours {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: $shadow;
+
+    h3 {
+        font-family: $headerFont;
+        text-align: center;
+    }
+
+    picture {
+        text-align: center;
+        box-shadow: $shadow;
+        justify-self: center;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .tourInfo {
+        text-align: center;
+
+        p {
+            color: black;
+            align-self: center;
+        }
+
+        button {
+            border: none;
+            padding: 10px 30px;
+            background-color: $image;
+            color: white;
+            font-family: $headerFont;
+            border-radius: 10px;
+            justify-self: center;
+            align-self: center;
+            margin: 10px;
+        }
+
+    }
+
+    // end of tourInfo class
+
+}
+
+//end of tours class

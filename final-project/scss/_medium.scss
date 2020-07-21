@@ -1,76 +1,96 @@
+header {
+    flex-direction: row;
+
+    img {
+        margin: 20px;
+    }
+
+}
+
+//end of header
 
 .navigation {
     display: flex;
 
-li {
-    display: block;
-    flex: 1 1 auto;
-}
-
-li:last-child a{
-    border-right: none;
-}
-
-a {
-    text-align: center;
-    border-bottom: none;
-    border-right: 2px solid white;
-}
-
-li:first-child {
-    display: none;
-}
-
-} // end navigation class
-.wrap { 
-
-.daily {
-    align-self: stretch;
-}
-
-.data {
-
-    .leftData {
-        padding-top: 30px;
+    li {
+        display: block;
+        flex: 1 1 auto;
     }
 
-    .rightData {
-        padding-top: 30px;
+    li:last-child a {
+        border-right: none;
     }
 
-} //end of data class
+    a {
+        text-align: center;
+        border-bottom: none;
+        border-right: 2px solid white;
+    }
 
-} //end of wrap class
+    li:first-child {
+        display: none;
+    }
+
+}
+
+// end navigation class
+.wrap {
+
+    .daily {
+        align-self: stretch;
+    }
+
+    .data {
+
+        .leftData {
+            padding-top: 30px;
+        }
+
+        .rightData {
+            padding-top: 30px;
+        }
+
+    }
+
+    //end of data class
+
+}
+
+//end of wrap class
 
 .futureweather {
     display: block;
 
-ul {
-    list-style-type: none;
-    padding: 0;
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
 }
 
-} // end of futureweather
+// end of futureweather
 
 .day {
     display: flex;
     text-align: center;
 
-li {
-    flex: 1 1 20%;
+    li {
+        flex: 1 1 20%;
+    }
+
+    img {
+        max-width: 5rem;
+    }
+
 }
 
-img {
-    max-width: 5rem;
-}
-
-} // end of day class
+// end of day class
 
 .slides {
 
     h3 {
         top: 10px;
-        left:180px;
+        left: 180px;
     }
 
     .left-button {
@@ -142,3 +162,42 @@ form {
 }
 
 // end of rental class
+
+// tours page
+
+.tours {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20%, 75%;
+
+    h3 {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    picture {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 10px;
+    }
+
+    .tourInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        p {
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+
+        button {
+            grid-column-start: 1;
+            grid-column-end: span 2;
+            align-self: start;
+        }
+    }
+
+    // end of tourInfo class
+
+}
+
+//end of tours class
