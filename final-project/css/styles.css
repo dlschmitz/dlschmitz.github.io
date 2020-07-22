@@ -462,6 +462,8 @@ main {
     text-align: left;
     color: black;
     padding: 0 20px; }
+  .focus ul li {
+    font-family: "Asul", sans-serif; }
 
 .slides {
   display: flex;
