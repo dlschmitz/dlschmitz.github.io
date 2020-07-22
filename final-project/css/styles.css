@@ -851,6 +851,8 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 600px; }
+    .contactPage .contact {
+      justify-self: center; }
     .contactPage h1, .contactPage h2 {
       grid-column-start: 1;
       grid-column-end: span 2; }

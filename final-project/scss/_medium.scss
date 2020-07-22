@@ -207,6 +207,10 @@ form {
     grid-template-columns: repeat(2, 1fr);
     max-width: 600px;
 
+    .contact {
+        justify-self: center;
+    }
+
     h1, h2 {
         grid-column-start: 1;
         grid-column-end: span 2;
