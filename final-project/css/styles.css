@@ -412,7 +412,7 @@ header {
     font-family: "Assistant", sans-serif; }
 
 nav {
-  background: #47B3A6;
+  background: #388f85;
   font-family: "Assistant", sans-serif;
   margin: 0px auto; }
 
@@ -460,7 +460,7 @@ main {
   .focus p {
     font-family: "Asul", sans-serif;
     text-align: left;
-    color: white;
+    color: black;
     padding: 0 20px; }
 
 .slides {
@@ -469,16 +469,12 @@ main {
   justify-content: center;
   align-items: center;
   position: relative; }
+  .slides h2 {
+    font-family: "Assistant", sans-serif;
+    text-align: center; }
   .slides picture img {
     max-width: 95%;
     margin: 10px auto;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
-  .slides h3 {
-    position: absolute;
-    top: 20px;
-    left: 13px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid gray;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
   .slides .left-button {
     position: absolute;
@@ -503,7 +499,7 @@ main {
   display: flex;
   justify-content: center; }
   .wrap .daily {
-    background-color: #D8CFA0;
+    background-color: #817d67;
     align-self: center;
     max-width: 300px;
     padding: 20px 10px;
@@ -543,7 +539,7 @@ main {
     margin: 10px; }
 
 footer {
-  background-color: #47B3A6;
+  background-color: #388f85;
   color: white; }
   footer h3 {
     font-family: "Assistant", sans-serif; }
@@ -574,12 +570,12 @@ form {
   margin-bottom: 10px; }
   form fieldset {
     margin: 2rem 10px;
-    border: 1px solid #47B3A6;
+    border: 1px solid #388f85;
     border-radius: 10px;
     padding: 0.5rem 2%;
     font-size: 1.25rem; }
   form legend {
-    color: #47B3A6;
+    color: #388f85;
     margin: 0 4rem;
     padding: 0 0.5rem;
     text-align: center;
@@ -782,15 +778,15 @@ form {
     top: 10px;
     left: 180px; }
   .slides .left-button {
-    top: 145px;
+    top: 240px;
     left: 115px; }
   .slides .right-button {
-    top: 145px;
+    top: 240px;
     right: 115px; }
 
   .futureweather {
     display: flex;
-    background-color: #47B3A6;
+    background-color: #388f85;
     font-family: "Alegreya Sans SC", sans-serif;
     flex-direction: column;
     align-items: center;
@@ -882,10 +878,10 @@ form {
     top: 10px;
     left: 310px; }
   .slides .left-button {
-    top: 175px;
+    top: 275px;
     left: 215px; }
   .slides .right-button {
-    top: 175px;
+    top: 275px;
     right: 215px; }
 
   .reservation {
