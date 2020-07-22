@@ -18,7 +18,7 @@ const forecastApiURL = "https://api.openweathermap.org/data/2.5/forecast?lat=20.
 fetch(forecastApiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
 
         const fivedayforecast = jsObject.list.filter(f => f.dt_txt.includes('18:00:00'));
 

@@ -231,6 +231,7 @@ footer {
 
     h3 {
         font-family: $headerFont;
+        padding-top: 10px;
     }
 
     .contactUs {
@@ -504,6 +505,7 @@ form {
 
         h3 {
             margin-bottom: 0;
+            font-family: $headerFont;
         }
 
         ul {
