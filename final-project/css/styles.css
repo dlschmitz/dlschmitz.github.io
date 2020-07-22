@@ -577,6 +577,9 @@ form {
     border-radius: 10px;
     padding: 0.5rem 2%;
     font-size: 1.25rem; }
+    form fieldset span {
+      font-size: 15px;
+      font-family: "Asul", sans-serif; }
   form legend {
     color: #388f85;
     margin: 0 4rem;

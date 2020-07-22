@@ -109,7 +109,7 @@ main {
         li {
             font-family: $paraFont;
         }
-        
+
     }
 
 }
@@ -285,6 +285,11 @@ form {
         border-radius: 10px;
         padding: 0.5rem 2%;
         font-size: 1.25rem;
+
+        span {
+            font-size: 15px;
+            font-family: $paraFont;
+        }
     }
 
     legend {
