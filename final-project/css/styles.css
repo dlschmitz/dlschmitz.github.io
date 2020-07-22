@@ -478,7 +478,7 @@ main {
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
   .slides .left-button {
     position: absolute;
-    top: 115px;
+    top: 210px;
     left: 15px;
     border: 2px solid;
     border-radius: 15px;
@@ -487,7 +487,7 @@ main {
     background-color: rgba(255, 255, 255, 0.5); }
   .slides .right-button {
     position: absolute;
-    top: 115px;
+    top: 210px;
     right: 15px;
     border: 2px solid;
     border-radius: 15px;
