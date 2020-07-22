@@ -201,3 +201,31 @@ form {
 }
 
 //end of tours class
+
+.contactPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+
+    h1, h2 {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+
+    iframe {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        margin: 10px;
+        justify-self: center;
+        max-width: 500px;
+    }
+
+    .contact {
+        align-self: center;
+    }
+
+    form {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+}
